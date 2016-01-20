@@ -1,2 +1,2 @@
 # BytePlanet
-一个小小独立游戏开发者的自言自语
+An interior monologue from an indie game programmer
