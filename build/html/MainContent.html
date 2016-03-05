@@ -1,0 +1,47 @@
+<div class="title-bar">
+    <div class="title-bar-left">
+        <button class="menu-icon hide-for-medium" type="button" data-toggle="mainContentOffCanvas"></button>
+        <span class="title-bar-title">BytePlanet</span>
+        <button class="fi-camera icon-size-1" style="padding-left: 1em;" type="button" id="openCameraButton">
+            <span class="title-bar-title" style="padding-left: 0.25em;">{{PageCameraText}}</span>
+        </button>
+
+        <button class="fi-photo icon-size-1" style="padding-left: 1em;" type="button" id="takePhotoButton">
+            <span class="title-bar-title" style="padding-left: 0.25em;">{{TakePhotoText}}</span>
+        </button>
+    </div>
+    <div class="title-bar-right">
+        <button class="fi-minus-circle icon-size-1" type="button" id="stopImmediatelyButton">
+            <span class="title-bar-title" style="padding-left: 0.25em;">{{StopImmediatelyText}}</span>
+        </button>
+    </div>
+</div>
+
+<div class="off-canvas-wrapper" style="height: 90%;">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" style="background:white;min-height: 25em;" id="mainContentOffCanvas" data-off-canvas data-position="left">
+            {{{leftCanvasContent}}}
+        </div>
+        <div class="off-canvas-content" style="padding-top: 1em;padding-bottom: 1em;" data-off-canvas-content>
+            <div class="expanded row">
+
+                <div class="show-for-medium medium-2 large-2 columns">
+                    {{{leftCanvasContent}}}
+                </div>
+
+                <div class="medium-10 large-10 columns">
+                    {{#centreContent}} {{{.}}} {{/centreContent}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reveal" id="mainModal" data-reveal>
+    <p id="mainModalContent">
+    </p>
+    <button id="closeModalButton" class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

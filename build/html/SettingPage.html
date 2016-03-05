@@ -1,0 +1,62 @@
+<div class="centreContent" id="settingPage" style="display:none;">
+    <div class="row">
+        <div class="columns">
+            <div class="title-bar">
+                <div class="title-bar-left">
+                    <span class="title-bar-title">{{SettingText}}</span>
+                </div>
+            </div>
+
+            <ul class="tabs" data-tabs id="mostfunSettingTabs">
+                <li class="tabs-title is-active">
+                    <a href="#passwordSetting" style="color:black;" aria-selected="true">
+                        <i class="fi-key icon-size-1-2"></i> <strong>{{PasswordSettingText}}</strong>
+                    </a>
+                </li>
+                <li class="tabs-title">
+                    <a href="#firmwareSetting" style="color:black;">
+                        <i class="fi-social-drive icon-size-1-2"></i> <strong>{{FirmwareSettingText}}</strong>
+                    </a>
+                </li>
+                <li class="tabs-title">
+                    <a href="#emailSetting" style="color:black;">
+                        <i class="fi-mail icon-size-1-2"></i> <strong>{{EmailSettingText}}</strong>
+                    </a>
+                </li>
+                <li class="tabs-title">
+                    <a href="#wifiSetting" style="color:black;">
+                        <i class="fi-sound icon-size-1-2"></i> <strong>{{WifiSettingText}}</strong>
+                    </a>
+                </li>
+                <li class="tabs-title">
+                    <a href="#languageSetting" style="color:black;">
+                        <i class="fi-web icon-size-1-2"></i> <strong>Language</strong>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tabs-content" data-tabs-content="mostfunSettingTabs">
+                <div class="tabs-panel is-active" id="passwordSetting">
+                    {{#passwordSetting}} {{{.}}} {{/passwordSetting}}
+                </div>
+
+                <div class="tabs-panel" id="firmwareSetting">
+                    {{#firmwareSetting}} {{{.}}} {{/firmwareSetting}}
+                </div>
+
+                <div class="tabs-panel" id="emailSetting">
+                    {{#emailSetting}} {{{.}}} {{/emailSetting}}
+                </div>
+
+                <div class="tabs-panel" id="wifiSetting">
+                    {{#wifiSetting}} {{{.}}} {{/wifiSetting}}
+                </div>
+
+                <div class="tabs-panel" id="languageSetting">
+                    {{#languageSetting}} {{{.}}} {{/languageSetting}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

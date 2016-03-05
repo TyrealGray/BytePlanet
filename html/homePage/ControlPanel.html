@@ -1,0 +1,94 @@
+<div id="controlPanel">
+
+    <div class="row">
+        <div class="columns" style="text-align:center;">
+
+            {{{controlSvg}}}
+
+            <div class="expanded secondary button-group">
+                <a class="button controlPanelButton" data-cmd="G1 F4000 Z-1">z-1</a>
+                <a class="button controlPanelButton" data-cmd="G1 F4000 Z-0.1">z-0.1</a>
+                <a class="button controlPanelButton" data-cmd="G1 F4000 Z0.1">z+0.1</a>
+                <a class="button controlPanelButton" data-cmd="G1 F4000 Z1">z+1</a>
+            </div>
+
+            <div class="expanded warning button-group">
+                <a class="button controlPanelButton" data-cmd="G1 F1800 E-1">e-1</a>
+                <a class="button controlPanelButton" data-cmd="G1 F1800 E-0.1">e-0.1</a>
+                <a class="button controlPanelButton" data-cmd="G1 F120 E0.1">e+0.1</a>
+                <a class="button controlPanelButton" data-cmd="G1 F120 E1">e+1</a>
+            </div>
+
+            <div id="levellingPlatformButton" class="expanded button">{{LevellingButtonText}}</div>
+
+        </div>
+    </div>
+
+    <div class="callout">
+
+        {{#temperaturesInfo}}
+
+        <div class="row">
+
+            <div class="large-8 small-9 columns">
+                <label class="label" style="background:{{extruderTemperatureColor}}">{{ExtruderTemperatureText}}</label>
+            </div>
+            <div class="large-4 small-3 columns">
+                <div class="tiny switch">
+                    <input class="switch-input" id="activeExtruderTemperature" type="checkbox" name="activeExtruderTemperature">
+                    <label class="switch-paddle" for="activeExtruderTemperature">
+                        <span class="show-for-sr">Active Extruder Temperature Control</span>
+                        <span class="switch-active" aria-hidden="true">On</span>
+                        <span class="switch-inactive" aria-hidden="true">Off</span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        {{/temperaturesInfo}}
+
+        <div class="row">
+            <div class="large-8 small-12 columns">
+                <div class="slider temperaturesSlider" data-slider data-initial-start="50" data-end="250" data-checkboxid="activeExtruderTemperature" data-inputid="extruderTemperatureSlider">
+                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="extruderTemperatureSlider"></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                </div>
+            </div>
+            <div class="large-4 small-12 columns">
+                <input class="temperatureInput" type="number" id="extruderTemperatureSlider" data-checkboxid="activeExtruderTemperature" data-cmd="M104 S">
+            </div>
+        </div>
+
+        {{#temperaturesInfo}}
+        <div class="row">
+            <div class="large-8 small-9 columns">
+                <label class="label" style="background:{{bedTemperatureColor}}">{{BedTemperatureText}}</label>
+            </div>
+            <div class="large-4 small-3 columns">
+                <div class="tiny switch">
+                    <input class="switch-input" id="activeBedTemperature" type="checkbox" name="activeBedTemperature">
+                    <label class="switch-paddle" for="activeBedTemperature">
+                        <span class="show-for-sr">Active Bed Temperature Control</span>
+                        <span class="switch-active" aria-hidden="true">On</span>
+                        <span class="switch-inactive" aria-hidden="true">Off</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        {{/temperaturesInfo}}
+
+        <div class="row">
+            <div class="large-8 small-12 columns">
+                <div class="slider temperaturesSlider" data-slider data-initial-start="50" data-end="150" data-checkboxid="activeBedTemperature" data-inputid="bedTemperatureSlider">
+                    <span class="slider-handle" data-slider-handle role="slider" tabindex="2" aria-controls="bedTemperatureSlider"></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                </div>
+            </div>
+            <div class="large-4 small-12 columns">
+                <input class="temperatureInput" type="number" id="bedTemperatureSlider" data-checkboxid="activeBedTemperature" data-cmd="M140 S">
+            </div>
+        </div>
+
+    </div>
+
+</div>

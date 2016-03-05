@@ -1,0 +1,15 @@
+{{#wifiItems}}
+<tr data-wifiname={{name}} data-numberid={{numberID}} data-protocol={{protocol}}>
+    <td>{{name}}</td>
+    <td>
+        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="{{strength}}" aria-valuemin="0" aria-valuetext="{{strength}} percent" aria-valuemax="100" style="margin-bottom: 0;">
+            <div class="progress-meter" style="width: {{strength}}%"></div>
+        </div>
+    </td>
+    <td>{{protocol}}</td>
+    <td>
+        <label class="label ConnectWifiButton" style="cursor: pointer;"><i class="fi-link icon-size-1-2"></i> {{connectText}}
+        </label>
+    </td>
+</tr>
+{{/wifiItems}}

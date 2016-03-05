@@ -1,0 +1,40 @@
+<div class="centreContent" id="fileManagePage" style="display:none;">
+    <div class="row">
+        <div class="large-8 small-12 columns" id="dropZone">
+            <form action="/upload-file" class="dropzone callout large" id="dropFileZone" method="post">
+                <div class="fallback">
+                    <input name="file" type="file" multiple />
+                </div>
+            </form>
+
+        </div>
+        <div class="large-4 small-12 columns">
+            <div class="callout large">
+                <p>{{TotalSpaceText}}:<strong id="diskTotalSpace">0</strong> byte</p>
+                <p>{{UsedSpaceText}}:<strong id="diskUsedSpace">0</strong> byte</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="columns">
+            <div class="title-bar">
+                <div class="title-bar-left">
+                    <span class="title-bar-title">{{FileManageText}}</span>
+                </div>
+            </div>
+            <div class="callout large">
+                <div class="row" id="fileTableRow">
+                </div>
+                <div id="fileTableFooter"></div>
+                <!--
+            <div class="columns" style="text-align: right;">
+    <button class="alert button" type="button"><i class="fi-trash icon-size-1"></i> {{DeleteButtonText}}</button>
+    <button class="button" type="button"><i class="fi-page-export icon-size-1"></i> {{ExportButtonText}}</button>
+</div>
+-->
+            </div>
+        </div>
+    </div>
+</div>
