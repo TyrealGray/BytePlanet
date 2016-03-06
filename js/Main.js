@@ -3,7 +3,6 @@ var locale = localStorage.getItem('locale') || navigator.language.toLowerCase();
 
 
 requirejs.config({
-    //默认从 js/ 中加载模块
     baseUrl: 'js/',
 
     paths: {
