@@ -100,5 +100,7 @@ define({
         OperateFileError: '操作文件失败，请检查网络',
         UploadFileError: '上传文件失败',
         HardwareError: '打印机硬件出错，请重启打印机'
+    }, MeInfoPage: {
+
     }
 });

@@ -103,6 +103,9 @@ define({
             OperateFileError: 'Operate file error',
             UploadFileError: 'Upload file error',
             HardwareError: 'Hardware error,please reboot device'
+        },
+        MeInfoPage: {
+
         }
     },
     "zh-cn": true
