@@ -10,8 +10,6 @@ define(function (require) {
 
         BrowserUtil = require('lib/BrowserUtil'),
 
-        MainContentAgent = require('module/agent/MainContentAgent'),
-
         StatusCodeManager = require('module/component/StatusCodeManager'),
 
         LeftCanvas = require('module/interface/LeftCanvas'),
@@ -115,48 +113,12 @@ define(function (require) {
     };
 
     MainContent.prototype._bindEvent = function () {
-        $('#openCameraButton').click(function (event) {
-            BrowserUtil.stopPropagation(event);
-
-            $('#mainModalContent').html(WebCameraTemplate);
-
-            MainContentAgent.queryPage('webcam', function (data) {
-
-                $('#mainModal').foundation('open');
-            }, function (error) {
-                $('#mainModalContent').html(StatusCodeManager.getErrorMessage(error.status));
-                $('#mainModal').foundation('open');
-            });
-        });
-
-        $('#takePhotoButton').click(function (event) {
-            BrowserUtil.stopPropagation(event);
-
-            MainContentAgent.queryPage('take-photo', function (data) {
-
-            }, function (error) {
-                var alert = new AlertBox(StatusCodeManager.getErrorMessage(error.status));
-                $('body').append(alert.getDiv());
-            });
-
-        });
 
         $('#closeModalButton').click(function (event) {
 
             $('#mainModalContent').html('');
         });
 
-        $('#stopImmediatelyButton').click(function (event) {
-            BrowserUtil.stopPropagation(event);
-
-            MainContentAgent.stopImmediately(function (data) {
-
-            }, function (error) {
-
-                var alert = new AlertBox(StatusCodeManager.getErrorMessage(error.status));
-                $('body').append(alert.getDiv());
-            });
-        });
     };
 
     MainContent.prototype._initTimer = function () {

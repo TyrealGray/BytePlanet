@@ -22,7 +22,6 @@ js/thirdLib/foundationjs/vendor/jquery.min.js
 js/thirdLib/backbonejs/backbone-min.js
 js/thirdLib/mustache.min.js
 js/lib/BrowserUtil.js
-js/module/agent/MainContentAgent.js
 js/module/GlobalVar.js
 js/module/component/StatusCodeManager.js
 js/thirdLib/requirejs/text.js
