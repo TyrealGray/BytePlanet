@@ -14,7 +14,6 @@ requirejs.config({
         underscore: 'thirdLib/backbonejs/underscore-min',
         jquery: 'thirdLib/foundationjs/vendor/jquery.min',
         dataTable: 'thirdLib/foundationjs/vendor/jquery.dataTables.min',
-        dropzone: 'thirdLib/dropzone',
         foundation: 'thirdLib/foundationjs/foundation.min',
         localization: 'module/interface/localization/'
     },
@@ -66,8 +65,7 @@ define(function (require) {
         var fileNames = [
                 'css/foundation.min.css',
                 'css/foundation-icons.css',
-                'css/dropzone.css',
-                'css/mostfunPanel.css'
+                'css/app.css'
             ];
 
         fileNames.forEach(function (fileName) {

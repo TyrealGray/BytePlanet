@@ -38,7 +38,6 @@ define(function (require) {
 
         FileOperateModalTemplate = require('text!../../../html/fileManagePage/fileManageOperate/FileOperateModal.html');
 
-    require('dropzone');
     require('dataTable');
 
     function FileManagePage() {
@@ -371,22 +370,6 @@ define(function (require) {
 
     FileManagePage.prototype._bindEvent = function () {
 
-        this._bindDropZoneEvent();
-    };
-
-    FileManagePage.prototype._bindDropZoneEvent = function () {
-
-        var self = this;
-
-        var dropFileZone = new Dropzone("#dropFileZone", ({
-            dictDefaultMessage: DropZoneIconTemplate +
-                GlobalVar.language.FileManagePage.DropToUpload,
-            addRemoveLinks: true
-        }));
-
-        dropFileZone.on('queuecomplete', function () {
-            self.trigger('active');
-        });
     };
 
     FileManagePage.prototype.getContent = function () {

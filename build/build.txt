@@ -1,4 +1,8 @@
 
+css/app.css
+----------------
+css/app.css
+
 css/dropzone.css
 ----------------
 css/dropzone.css
@@ -10,10 +14,6 @@ css/foundation-icons.css
 css/foundation.min.css
 ----------------
 css/foundation.min.css
-
-css/mostfunPanel.css
-----------------
-css/mostfunPanel.css
 
 js/module/MainFrame.js
 ----------------
@@ -48,7 +48,6 @@ text!module/../../html/fileManagePage/DropZoneIcon.html
 text!module/../../html/fileManagePage/fileManageTable/TableHead.html
 text!module/../../html/fileManagePage/fileManageTable/TableBody.html
 text!module/../../html/fileManagePage/fileManageOperate/FileOperateModal.html
-js/thirdLib/dropzone.js
 js/thirdLib/foundationjs/vendor/jquery.dataTables.min.js
 js/module/interface/FileManagePage.js
 text!module/../../html/CloudModelPage.html
