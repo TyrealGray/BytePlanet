@@ -24,8 +24,6 @@ define(function (require) {
 
         HelpPage = require('module/interface/HelpPage'),
 
-        LogoutPage = require('module/interface/LogoutPage'),
-
         AlertBox = require('module/interface/kit/AlertBox'),
 
         GlobalVar = require('module/GlobalVar'),
@@ -56,8 +54,6 @@ define(function (require) {
         this._initLeftCanvas();
 
         this._initEvent();
-
-        this._initTimer();
     };
 
     MainContent.prototype._initLeftCanvas = function () {
@@ -70,7 +66,6 @@ define(function (require) {
         this._pageSet.push(new CloudModelPage());
         this._pageSet.push(new SettingPage());
         this._pageSet.push(new HelpPage());
-        this._pageSet.push(new LogoutPage());
     };
 
     MainContent.prototype._initPage = function () {
@@ -87,7 +82,7 @@ define(function (require) {
             centreContent: [
                 HomePage.prototype.getContent(), FileManagePage.prototype.getContent(),
                 CloudModelPage.prototype.getContent(), SettingPage.prototype.getContent(),
-                HelpPage.prototype.getContent(), LogoutPage.prototype.getContent()
+                HelpPage.prototype.getContent()
             ]
         }));
     };
@@ -118,12 +113,6 @@ define(function (require) {
 
             $('#mainModalContent').html('');
         });
-
-    };
-
-    MainContent.prototype._initTimer = function () {
-
-        this._activePage = this._pageSet[0];
 
     };
 

@@ -84,9 +84,6 @@ define({
         WifiStrength: 'Wifi信号强度',
         Connect: '连接'
     },
-    LogoutPage: {
-        ConfirmUserLogout: '确定要登出账号吗?'
-    },
     HelpPage: {
         MostFunDocumentation: 'mostfun Panel文档'
     },

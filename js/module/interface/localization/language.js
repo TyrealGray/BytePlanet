@@ -90,9 +90,6 @@ define({
         HelpPage: {
             MostFunDocumentation: 'mostfun Panel Documentation'
         },
-        LogoutPage: {
-            ConfirmUserLogout: 'Are you sure want to logout?'
-        },
         AlertBox: {
             Error404: 'Error404',
             PrintFileError: 'Unable to print file',

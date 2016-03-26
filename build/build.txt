@@ -64,8 +64,6 @@ text!module/../../html/settingPage/wifiConnect/WifiOperateModal.html
 js/module/interface/SettingPage.js
 text!module/../../html/HelpPage.html
 js/module/interface/HelpPage.js
-text!module/../../html/LogoutPage.html
-js/module/interface/LogoutPage.js
 text!module/../../html/MainContent.html
 text!module/../../html/WebCamera.html
 js/module/interface/MainContent.js

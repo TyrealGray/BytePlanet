@@ -29,8 +29,6 @@ define(function (require) {
 
     LeftCanvas.prototype.PAGE_HELP_INDEX = 4;
 
-    LeftCanvas.prototype.PAGE_LOGOUT_INDEX = 5;
-
     LeftCanvas.prototype.getContent = function () {
         var language = GlobalVar.language.LeftCanvas;
 
@@ -91,9 +89,6 @@ define(function (require) {
             break;
         case this.PAGE_HELP_INDEX:
             id = 'helpPage';
-            break;
-        case this.PAGE_LOGOUT_INDEX:
-            id = 'logoutPage';
             break;
         default:
             break;
