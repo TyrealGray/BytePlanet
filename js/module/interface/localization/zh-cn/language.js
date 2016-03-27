@@ -7,6 +7,7 @@ define({
     LeftCanvas: {
         Home: '主页',
         FileManage: '文件管理',
+        MeInfo:'关于我',
         CloudModel: '获取模型',
         Setting: '设置',
         Help: '使用帮助',
@@ -34,6 +35,8 @@ define({
         CurrentPrintFile: '当前打印文件名',
         CurrentPrintLayer: '当前打印层数',
         PrintLayerCount: '打印总层数'
+    }, MeInfoPage: {
+        Title:'我的名字叫TyrealGray'
     },
     FileManagePage: {
         FileManage: '文件管理',
@@ -97,7 +100,5 @@ define({
         OperateFileError: '操作文件失败，请检查网络',
         UploadFileError: '上传文件失败',
         HardwareError: '打印机硬件出错，请重启打印机'
-    }, MeInfoPage: {
-
     }
 });

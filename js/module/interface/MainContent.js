@@ -16,7 +16,7 @@ define(function (require) {
 
         HomePage = require('module/interface/HomePage'),
 
-        FileManagePage = require('module/interface/FileManagePage'),
+        MeInfoPage = require('module/interface/MeInfoPage'),
 
         CloudModelPage = require('module/interface/CloudModelPage'),
 
@@ -62,7 +62,7 @@ define(function (require) {
 
     MainContent.prototype._initCentreContent = function () {
         this._pageSet.push(new HomePage());
-        this._pageSet.push(new FileManagePage());
+        this._pageSet.push(new MeInfoPage());
         this._pageSet.push(new CloudModelPage());
         this._pageSet.push(new SettingPage());
         this._pageSet.push(new HelpPage());
@@ -80,7 +80,7 @@ define(function (require) {
             StopImmediatelyText: language.StopImmediately,
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
-                HomePage.prototype.getContent(), FileManagePage.prototype.getContent(),
+                HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
                 CloudModelPage.prototype.getContent(), SettingPage.prototype.getContent(),
                 HelpPage.prototype.getContent()
             ]

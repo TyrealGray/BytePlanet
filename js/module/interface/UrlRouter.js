@@ -16,8 +16,8 @@ define(function (require, exports) {
         case '#/home':
             $('#homePage').show();
             break;
-        case '#/fileManage':
-            $('#fileManagePage').show();
+        case '#/meInfo':
+            $('#meInfoPage').show();
             break;
         case '#/cloudModel':
             $('#cloudModelPage').show();

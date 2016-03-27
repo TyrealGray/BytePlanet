@@ -9,6 +9,7 @@ define({
         LeftCanvas: {
             Home: 'Home',
             FileManage: 'File Manage',
+            MeInfo:'About Myself',
             CloudModel: 'Cloud Model',
             Setting: 'Setting',
             Help: 'Help',
@@ -36,6 +37,9 @@ define({
             CurrentPrintFile: 'Current Print File',
             CurrentPrintLayer: 'Current Print Layer',
             PrintLayerCount: 'Print Layer Count'
+        },
+        MeInfoPage: {
+            Title:'My name is TyrealGray'
         },
         FileManagePage: {
             FileManage: 'File Manage',
@@ -100,9 +104,6 @@ define({
             OperateFileError: 'Operate file error',
             UploadFileError: 'Upload file error',
             HardwareError: 'Hardware error,please reboot device'
-        },
-        MeInfoPage: {
-
         }
     },
     "zh-cn": true

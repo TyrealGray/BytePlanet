@@ -21,7 +21,7 @@ define(function (require) {
 
     LeftCanvas.prototype.PAGE_HOME_INDEX = 0;
 
-    LeftCanvas.prototype.PAGE_FILE_MANAGE_INDEX = 1;
+    LeftCanvas.prototype.PAGE_ME_INFO_INDEX = 1;
 
     LeftCanvas.prototype.PAGE_CLOUD_MODEL_INDEX = 2;
 
@@ -34,7 +34,7 @@ define(function (require) {
 
         return Mustache.render(LeftCanvasTemplate, {
             HomeMenuText: language.Home,
-            FileManageMenuText: language.FileManage,
+            MeInfoMenuText: language.MeInfo,
             CloudModelMenuText: language.CloudModel,
             SettingMenuText: language.Setting,
             HelpMenuText: language.Help,
@@ -78,8 +78,8 @@ define(function (require) {
         case this.PAGE_HOME_INDEX:
             id = 'homePage';
             break;
-        case this.PAGE_FILE_MANAGE_INDEX:
-            id = 'fileManagePage';
+        case this.PAGE_ME_INFO_INDEX:
+            id = 'meInfoPage';
             break;
         case this.PAGE_CLOUD_MODEL_INDEX:
             id = 'cloudModelPage';
