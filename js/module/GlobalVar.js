@@ -9,9 +9,7 @@ define(function (require) {
 
         isMobile: false,
 
-        threejsRenderer: null,
-
-        debug: false
+        threejsRenderer: null
     };
 
 });
