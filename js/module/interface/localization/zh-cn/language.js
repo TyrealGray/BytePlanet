@@ -58,34 +58,9 @@ define({
         AuthorRadio: '按作者',
         DateRadio: '按时间'
     },
-    SettingPage: {
+    LanguageSettingPage: {
         Setting: '设置',
-        PasswordSetting: '密码设置',
-        FirmwareSetting: '固件设置',
-        EmailSetting: '邮箱设置',
-        WifiSetting: 'Wifi设置',
-        OldPassword: '旧密码',
-        NewPassword: '新密码',
-        ConfirmPassword: '确认新密码',
-        Save: '保存',
-        CurPanelVersion: '当前控制台版本号',
-        CurSystemVersion: '当前系统版本号',
-        Update: '更新',
-        HostEmail: '推送邮箱',
-        HostEmailPassword: '推送邮箱密码',
-        HostServer: '邮箱服务器',
-        HostServerPort: '邮箱服务器SSL端口',
-        EmailPrefix: '邮件前缀',
-        ReceiveEmail: '接收邮箱',
-        CurWifiConnection: '当前wifi连接',
-        RouterSetting: '路由器设置',
-        RouterName: '路由器名称',
-        RouterPassword: '路由器密码',
-        AvailableWifi: '可用wifi',
-        WifiName: 'Wifi名称',
-        EncryptionProtocol: '加密协议',
-        WifiStrength: 'Wifi信号强度',
-        Connect: '连接'
+        Save: '保存'
     },
     HelpPage: {
         MostFunDocumentation: 'mostfun Panel文档'

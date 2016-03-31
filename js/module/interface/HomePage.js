@@ -62,7 +62,7 @@ define(function (require) {
                 CurrentPrintFileText: language.CurrentPrintFile,
                 CurrentPrintLayerText: language.CurrentPrintLayer,
                 PrintLayerCountText: language.PrintLayerCount,
-                SaveButtonText: GlobalVar.language.SettingPage.Save,
+                SaveButtonText: GlobalVar.language.LanguageSettingPage.Save,
                 PauseButtonText: language.Pause,
                 CancelButtonText: language.Cancel,
                 ResumeButtonText: language.Resume

@@ -62,34 +62,9 @@ define({
             AuthorRadio: 'Search By Author',
             DateRadio: 'Search By Date'
         },
-        SettingPage: {
+        LanguageSettingPage: {
             Setting: 'Setting',
-            PasswordSetting: 'Password Setting',
-            FirmwareSetting: 'Firmware Setting',
-            EmailSetting: 'Email Setting',
-            WifiSetting: 'Wifi Setting',
-            OldPassword: 'Old Password',
-            NewPassword: 'New Password',
-            ConfirmPassword: 'Confirm Password',
-            Save: 'Save',
-            CurPanelVersion: 'Current Panel Version',
-            CurSystemVersion: 'Current System Version',
-            Update: 'Update',
-            HostEmail: 'Host Email',
-            HostEmailPassword: 'Host Email Password',
-            HostServer: 'Host Server',
-            HostServerPort: 'Host Server SSL Port',
-            EmailPrefix: 'Email Prefix',
-            ReceiveEmail: 'Receive Email',
-            CurWifiConnection: 'Current Wifi Connection',
-            RouterSetting: 'Router Setting',
-            RouterName: 'Router Name',
-            RouterPassword: 'Router Password',
-            AvailableWifi: 'Available Wifi',
-            WifiName: 'Wifi Name',
-            EncryptionProtocol: 'Encryption Protocol',
-            WifiStrength: 'Wifi Signal Strength',
-            Connect: 'Connect'
+            Save: 'Save'
         },
         HelpPage: {
             MostFunDocumentation: 'mostfun Panel Documentation'

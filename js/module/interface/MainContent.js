@@ -20,17 +20,13 @@ define(function (require) {
 
         CloudModelPage = require('module/interface/CloudModelPage'),
 
-        SettingPage = require('module/interface/SettingPage'),
-
-        HelpPage = require('module/interface/HelpPage'),
+        LanguageSettingPage = require('module/interface/LanguageSettingPage'),
 
         AlertBox = require('module/interface/kit/AlertBox'),
 
         GlobalVar = require('module/GlobalVar'),
 
-        MainContentTemplate = require('text!../../../html/MainContent.html'),
-
-        WebCameraTemplate = require('text!../../../html/WebCamera.html');
+        MainContentTemplate = require('text!../../../html/MainContent.html');
 
     function MainContent() {
 
@@ -64,8 +60,7 @@ define(function (require) {
         this._pageSet.push(new HomePage());
         this._pageSet.push(new MeInfoPage());
         this._pageSet.push(new CloudModelPage());
-        this._pageSet.push(new SettingPage());
-        this._pageSet.push(new HelpPage());
+        this._pageSet.push(new LanguageSettingPage());
     };
 
     MainContent.prototype._initPage = function () {
@@ -81,8 +76,7 @@ define(function (require) {
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
-                CloudModelPage.prototype.getContent(), SettingPage.prototype.getContent(),
-                HelpPage.prototype.getContent()
+                CloudModelPage.prototype.getContent(), LanguageSettingPage.prototype.getContent()
             ]
         }));
     };

@@ -25,12 +25,6 @@ define(function (require, exports) {
         case '#/setting':
             $('#settingPage').show();
             break;
-        case '#/help':
-            $('#helpPage').show();
-            break;
-        case '#/logout':
-            $('#logoutPage').show();
-            break;
         default:
             break;
         }
