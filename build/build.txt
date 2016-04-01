@@ -31,9 +31,6 @@ text!module/../../html/AlertBox.html
 js/module/interface/kit/AlertBox.js
 js/module/interface/CentreContentPage.js
 text!module/../../html/HomePage.html
-text!module/../../html/homePage/ControlPanel.html
-text!module/../../html/homePage/StatusPanel.html
-text!module/../../html/homePage/ControlSvg.html
 js/module/interface/HomePage.js
 text!module/../../html/MeInfoPage.html
 js/module/interface/MeInfoPage.js

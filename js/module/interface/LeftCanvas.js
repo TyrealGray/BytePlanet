@@ -27,8 +27,6 @@ define(function (require) {
 
     LeftCanvas.prototype.PAGE_SETTING_INDEX = 3;
 
-    LeftCanvas.prototype.PAGE_HELP_INDEX = 4;
-
     LeftCanvas.prototype.getContent = function () {
         var language = GlobalVar.language.LeftCanvas;
 
@@ -36,9 +34,7 @@ define(function (require) {
             HomeMenuText: language.Home,
             MeInfoMenuText: language.MeInfo,
             CloudModelMenuText: language.CloudModel,
-            SettingMenuText: language.Setting,
-            HelpMenuText: language.Help,
-            LogoutMenuText: language.Logout
+            SettingMenuText: language.Setting
         });
     };
 
@@ -86,9 +82,6 @@ define(function (require) {
             break;
         case this.PAGE_SETTING_INDEX:
             id = 'settingPage';
-            break;
-        case this.PAGE_HELP_INDEX:
-            id = 'helpPage';
             break;
         default:
             break;

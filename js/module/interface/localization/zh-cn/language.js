@@ -38,21 +38,6 @@ define({
     }, MeInfoPage: {
         Title:'我的名字叫TyrealGray'
     },
-    FileManagePage: {
-        FileManage: '文件管理',
-        DropToUpload: '拖拽文件至此处上传',
-        Total: '总大小',
-        Used: '已使用',
-        FileName: '文件名',
-        Size: '文件大小',
-        Description: '文件描述',
-        UploadDate: '上传时间',
-        Operation: '操作',
-        Print: '打印',
-        Preview: '预览',
-        Delete: '删除',
-        Export: '导出'
-    },
     CloudModelPage: {
         Search: '搜索',
         AuthorRadio: '按作者',
@@ -61,9 +46,6 @@ define({
     LanguageSettingPage: {
         Setting: '设置',
         Save: '保存'
-    },
-    HelpPage: {
-        MostFunDocumentation: 'mostfun Panel文档'
     },
     AlertBox: {
         Error404: '404无效请求',

@@ -41,22 +41,6 @@ define({
         MeInfoPage: {
             Title:'My name is TyrealGray'
         },
-        FileManagePage: {
-            FileManage: 'File Manage',
-            DropToUpload: 'Drop files here to upload',
-            ButtonUploadText: 'Select File To Upload',
-            Total: 'Total',
-            Used: 'Used',
-            FileName: 'File Name',
-            Size: 'Size',
-            Description: 'Description',
-            UploadDate: 'Upload Date',
-            Operation: 'Operation',
-            Print: 'Print',
-            Preview: 'Preview',
-            Delete: 'Delete',
-            Export: 'Export'
-        },
         CloudModelPage: {
             Search: 'Search',
             AuthorRadio: 'Search By Author',
@@ -65,9 +49,6 @@ define({
         LanguageSettingPage: {
             Setting: 'Setting',
             Save: 'Save'
-        },
-        HelpPage: {
-            MostFunDocumentation: 'mostfun Panel Documentation'
         },
         AlertBox: {
             Error404: 'Error404',
