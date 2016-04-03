@@ -21,7 +21,7 @@ define(function(require) {
 
     InheritHelper.inheritPrototype(LanguageSettingPage, CentreContentPage);
 
-    LanguageSettingPage.prototype.INDEX = 3;
+    LanguageSettingPage.prototype.INDEX = 2;
 
     LanguageSettingPage.prototype.getContent = function() {
         var language = GlobalVar.language.LanguageSettingPage;
