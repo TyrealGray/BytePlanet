@@ -18,8 +18,6 @@ define(function (require) {
 
         MeInfoPage = require('module/interface/MeInfoPage'),
 
-        CloudModelPage = require('module/interface/CloudModelPage'),
-
         LanguageSettingPage = require('module/interface/LanguageSettingPage'),
 
         AlertBox = require('module/interface/kit/AlertBox'),
@@ -59,7 +57,6 @@ define(function (require) {
     MainContent.prototype._initCentreContent = function () {
         this._pageSet.push(new HomePage());
         this._pageSet.push(new MeInfoPage());
-        this._pageSet.push(new CloudModelPage());
         this._pageSet.push(new LanguageSettingPage());
     };
 
@@ -76,7 +73,7 @@ define(function (require) {
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
-                CloudModelPage.prototype.getContent(), LanguageSettingPage.prototype.getContent()
+                LanguageSettingPage.prototype.getContent()
             ]
         }));
     };

@@ -23,9 +23,7 @@ define(function (require) {
 
     LeftCanvas.prototype.PAGE_ME_INFO_INDEX = 1;
 
-    LeftCanvas.prototype.PAGE_CLOUD_MODEL_INDEX = 2;
-
-    LeftCanvas.prototype.PAGE_SETTING_INDEX = 3;
+    LeftCanvas.prototype.PAGE_SETTING_INDEX = 2;
 
     LeftCanvas.prototype.getContent = function () {
         var language = GlobalVar.language.LeftCanvas;
@@ -33,7 +31,6 @@ define(function (require) {
         return Mustache.render(LeftCanvasTemplate, {
             HomeMenuText: language.Home,
             MeInfoMenuText: language.MeInfo,
-            CloudModelMenuText: language.CloudModel,
             SettingMenuText: language.Setting
         });
     };
@@ -76,9 +73,6 @@ define(function (require) {
             break;
         case this.PAGE_ME_INFO_INDEX:
             id = 'meInfoPage';
-            break;
-        case this.PAGE_CLOUD_MODEL_INDEX:
-            id = 'cloudModelPage';
             break;
         case this.PAGE_SETTING_INDEX:
             id = 'settingPage';
