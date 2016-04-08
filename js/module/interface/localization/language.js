@@ -39,7 +39,8 @@ define({
             PrintLayerCount: 'Print Layer Count'
         },
         MeInfoPage: {
-            Title:'My name is TyrealGray'
+            Title:'My name is TyrealGray',
+            RecentlyMove:'I will have an interview at 5.30am 4.13.2016, It\'s an Austrlian company. Hope I can succeed!'
         },
         CloudModelPage: {
             Search: 'Search',

@@ -21,7 +21,10 @@ define(function(require) {
 
     MeInfoPage.prototype.getContent = function() {
         var language = GlobalVar.language.MeInfoPage;
-        return Mustache.render(MeInfoPageTemplate, { MeInfoPageTitleText: language.Title });
+        return Mustache.render(MeInfoPageTemplate, {
+            TitleText: language.Title,
+            RecentlyMoveText: language.RecentlyMove
+        });
     }
 
     return MeInfoPage;

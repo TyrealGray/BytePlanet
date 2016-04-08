@@ -36,7 +36,8 @@ define({
         CurrentPrintLayer: '当前打印层数',
         PrintLayerCount: '打印总层数'
     }, MeInfoPage: {
-        Title:'我的名字叫TyrealGray'
+        Title:'我的名字叫TyrealGray',
+        RecentlyMove:'2016.4.13早上5点半，会有一家澳大利亚公司的初试，希望我能成功'
     },
     CloudModelPage: {
         Search: '搜索',
