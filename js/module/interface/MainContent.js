@@ -10,8 +10,6 @@ define(function (require) {
 
         BrowserUtil = require('lib/BrowserUtil'),
 
-        StatusCodeManager = require('module/component/StatusCodeManager'),
-
         LeftCanvas = require('module/interface/LeftCanvas'),
 
         HomePage = require('module/interface/HomePage'),

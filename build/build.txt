@@ -39,4 +39,5 @@ js/module/interface/LanguageSettingPage.js
 text!module/../../html/MainContent.html
 js/module/interface/MainContent.js
 js/module/interface/UrlRouter.js
+js/module/interface/kit/Diary.js
 js/module/MainFrame.js

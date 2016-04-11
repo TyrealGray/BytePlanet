@@ -3,7 +3,7 @@ var locale = localStorage.getItem('locale') || navigator.language.toLowerCase();
 
 
 requirejs.config({
-    baseUrl: 'build/js/',
+    baseUrl: 'js/',
 
     paths: {
         i18n: 'thirdLib/requirejs/i18n',

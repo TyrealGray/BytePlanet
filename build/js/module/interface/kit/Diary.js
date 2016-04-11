@@ -1,0 +1,1 @@
+define(["require"],function(e){"use strict";function t(e,t,n){this._index=e,this._title=t,this._date=n}t.prototype.getContent=function(){return e("text!../../../../html/diary/"+this._index+".html")}});
