@@ -6,8 +6,6 @@ define(function (require) {
 
         Backbone = require('backbone'),
 
-        StatusCodeManager = require('module/component/StatusCodeManager'),
-
         AlertBox = require('module/interface/kit/AlertBox');
 
     function CentreContentPage() {
@@ -37,7 +35,7 @@ define(function (require) {
 
     CentreContentPage.prototype.notifyErrorMessage = function (errorCode) {
 
-        var alert = new AlertBox(StatusCodeManager.getErrorMessage(errorCode));
+        var alert = new AlertBox(errorCode);
         $('body').append(alert.getDiv());
     };
 

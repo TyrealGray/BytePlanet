@@ -19,7 +19,6 @@ js/thirdLib/backbonejs/backbone-min.js
 js/thirdLib/mustache.min.js
 js/lib/BrowserUtil.js
 js/module/GlobalVar.js
-js/module/component/StatusCodeManager.js
 js/thirdLib/requirejs/text.js
 text!module/../../html/LeftCanvas.html
 js/module/interface/LeftCanvas.js
@@ -39,5 +38,4 @@ js/module/interface/LanguageSettingPage.js
 text!module/../../html/MainContent.html
 js/module/interface/MainContent.js
 js/module/interface/UrlRouter.js
-js/module/interface/kit/Diary.js
 js/module/MainFrame.js

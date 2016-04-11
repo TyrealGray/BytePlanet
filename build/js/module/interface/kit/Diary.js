@@ -1,1 +1,1 @@
-define(["require"],function(e){"use strict";function t(e,t,n){this._index=e,this._title=t,this._date=n}t.prototype.getContent=function(){return e("text!../../../../html/diary/"+this._index+".html")}});
+define(["require","module/agent/DiaryAgent"],function(e){"use strict";function n(e,t,n){this._index=e,this._title=t,this._date=n}var t=e("module/agent/DiaryAgent");return n.prototype.setDiv=function(e){},n});

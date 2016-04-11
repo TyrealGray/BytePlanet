@@ -10,7 +10,7 @@ define(function(require) {
     }
     
     Diary.prototype.setDiv = function(divID){
-        
+        //TODO use diary agent to get content
     };
     
     return Diary;
