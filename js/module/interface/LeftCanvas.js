@@ -23,7 +23,9 @@ define(function (require) {
 
     LeftCanvas.prototype.PAGE_ME_INFO_INDEX = 1;
 
-    LeftCanvas.prototype.PAGE_SETTING_INDEX = 2;
+    LeftCanvas.prototype.PAGE_DIARIES_INDEX = 2;
+
+    LeftCanvas.prototype.PAGE_SETTING_INDEX = 3;
 
     LeftCanvas.prototype.getContent = function () {
         var language = GlobalVar.language.LeftCanvas;
@@ -31,6 +33,7 @@ define(function (require) {
         return Mustache.render(LeftCanvasTemplate, {
             HomeMenuText: language.Home,
             MeInfoMenuText: language.MeInfo,
+            DiariesMenuText: language.Diary,
             SettingMenuText: language.Setting
         });
     };
@@ -68,17 +71,20 @@ define(function (require) {
         var id = '';
 
         switch (index) {
-        case this.PAGE_HOME_INDEX:
-            id = 'homePage';
-            break;
-        case this.PAGE_ME_INFO_INDEX:
-            id = 'meInfoPage';
-            break;
-        case this.PAGE_SETTING_INDEX:
-            id = 'settingPage';
-            break;
-        default:
-            break;
+            case this.PAGE_HOME_INDEX:
+                id = 'homePage';
+                break;
+            case this.PAGE_ME_INFO_INDEX:
+                id = 'meInfoPage';
+                break;
+            case this.PAGE_DIARIES_INDEX:
+                id = 'diaresPage';
+                break;
+            case this.PAGE_SETTING_INDEX:
+                id = 'settingPage';
+                break;
+            default:
+                break;
         }
 
         $('#' + id).fadeIn();

@@ -6,12 +6,9 @@ define({
     },
     LeftCanvas: {
         Home: '主页',
-        FileManage: '文件管理',
         MeInfo:'关于我',
-        CloudModel: '获取模型',
-        Setting: '设置',
-        Help: '使用帮助',
-        Logout: '登出'
+        Diary:'日志',
+        Setting: '设置'
     },
     HomePage: {
         TemperatureInfo: '温度信息',

@@ -8,12 +8,9 @@ define({
         },
         LeftCanvas: {
             Home: 'Home',
-            FileManage: 'File Manage',
             MeInfo:'About Myself',
-            CloudModel: 'Cloud Model',
+            Diary:'Diary',
             Setting: 'Setting',
-            Help: 'Help',
-            Logout: 'Logout'
         },
         HomePage: {
             TemperatureInfo: 'Temperature Info',

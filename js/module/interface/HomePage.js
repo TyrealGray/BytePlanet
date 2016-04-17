@@ -1,4 +1,3 @@
-/* global define, setTimeout,document,setInterval,console,$,window */
 define(function (require) {
     'use strict';
 

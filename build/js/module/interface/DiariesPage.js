@@ -1,0 +1,1 @@
+define(["require","mustache","lib/InheritHelper","module/component/TemperatureManager","module/interface/CentreContentPage"],function(e){"use strict";function s(){}var t=e("mustache"),n=e("lib/InheritHelper"),r=e("module/component/TemperatureManager"),i=e("module/interface/CentreContentPage");return n.inheritPrototype(s,i),HomePage.prototype.INDEX=2,s});
