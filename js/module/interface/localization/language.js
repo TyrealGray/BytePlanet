@@ -2,6 +2,7 @@
 define({
     "root": {
         MainContent: {
+            Github:'Github',
             Camera: 'Camera',
             TakePhoto: 'Take A Photo',
             StopImmediately: 'Stop Immediately'

@@ -68,6 +68,7 @@ define(function (require) {
             PageCameraText: language.Camera,
             TakePhotoText: language.TakePhoto,
             StopImmediatelyText: language.StopImmediately,
+            GithubText:language.Github,
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
