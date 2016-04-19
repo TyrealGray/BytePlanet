@@ -11,49 +11,16 @@ define({
         Setting: '设置'
     },
     HomePage: {
-        TemperatureInfo: '温度信息',
-        GCodeControl: 'GCode 控制台',
-        BedTargetTemperature: '热床设定温度',
-        BedTemperature: '热床当前温度',
-        ExtruderTargetTemperature: '探头设定温度',
-        ExtruderTemperature: '探头当前温度',
-        MostFunControlPanel: '控制面板',
-        Levelling: '调平',
-        PrintStatusInfo: '打印状态信息',
-        ReprintableTable: '可恢复打印列表',
-        ReprintableFileCreatedDate: '创建日期',
-        ReprintableFileName: '可恢复文件',
-        ReprintableFileOperate: '恢复操作',
         Send: '发送',
         Pause: '暂停',
         Cancel: '取消',
-        Resume: '继续',
-        Reprint: '恢复打印',
-        CurrentPrintFile: '当前打印文件名',
-        CurrentPrintLayer: '当前打印层数',
-        PrintLayerCount: '打印总层数'
+        Resume: '继续'
     }, MeInfoPage: {
         Title:'我的名字叫TyrealGray',
         RecentlyMove:'2016.4.13早上5点半，会有一家澳大利亚公司的初试，希望我能成功'
     },
-    CloudModelPage: {
-        Search: '搜索',
-        AuthorRadio: '按作者',
-        DateRadio: '按时间'
-    },
     LanguageSettingPage: {
         Setting: '设置',
         Save: '保存'
-    },
-    AlertBox: {
-        Error404: '404无效请求',
-        PrintFileError: '无法打印文件',
-        SettingEmailError: '设置邮箱出错',
-        LostConnection: '网络连接超时，请检查是否已断开',
-        DeviceError: '设备出错,请重试或联系客服',
-        GetFileListError: '获取文件列表出错，请检查网络',
-        OperateFileError: '操作文件失败，请检查网络',
-        UploadFileError: '上传文件失败',
-        HardwareError: '打印机硬件出错，请重启打印机'
     }
 });
