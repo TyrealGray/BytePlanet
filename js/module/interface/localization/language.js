@@ -18,7 +18,7 @@ define({
         },
         MeInfoPage: {
             Title:'My name is TyrealGray',
-            RecentlyMove:'I will have an interview at 5.30am 4.13.2016, It\'s an Austrlian company. Hope I can succeed!'
+            RecentlyMove:'Sorry for let you guys down,but it seems my australian interview had failed'
         },
         LanguageSettingPage: {
             Setting: 'Setting',
