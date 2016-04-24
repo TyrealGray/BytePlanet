@@ -15,6 +15,8 @@ define(function (require) {
         HomePage = require('module/interface/HomePage'),
 
         MeInfoPage = require('module/interface/MeInfoPage'),
+        
+        DiariesPage = require('module/interface/DiariesPage'),
 
         LanguageSettingPage = require('module/interface/LanguageSettingPage'),
 
@@ -55,6 +57,7 @@ define(function (require) {
     MainContent.prototype._initCentreContent = function () {
         this._pageSet.push(new HomePage());
         this._pageSet.push(new MeInfoPage());
+        this._pageSet.push(new DiariesPage());
         this._pageSet.push(new LanguageSettingPage());
     };
 
@@ -72,7 +75,7 @@ define(function (require) {
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
-                LanguageSettingPage.prototype.getContent()
+                DiariesPage.prototype.getContent(),LanguageSettingPage.prototype.getContent()
             ]
         }));
     };

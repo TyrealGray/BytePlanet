@@ -18,7 +18,7 @@ define(function (require) {
 
     InheritHelper.inheritPrototype(DiariesPage, CentreContentPage);
 
-    HomePage.prototype.INDEX = 2;
+    DiariesPage.prototype.INDEX = 2;
     
     DiariesPage.prototype.getContent = function () {
 

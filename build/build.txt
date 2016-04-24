@@ -33,6 +33,8 @@ text!module/../../html/HomePage.html
 js/module/interface/HomePage.js
 text!module/../../html/MeInfoPage.html
 js/module/interface/MeInfoPage.js
+text!module/../../html/DiariesPage.html
+js/module/interface/DiariesPage.js
 text!module/../../html/LanguageSettingPage.html
 js/module/interface/LanguageSettingPage.js
 text!module/../../html/MainContent.html

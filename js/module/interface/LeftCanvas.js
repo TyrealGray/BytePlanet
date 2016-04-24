@@ -78,7 +78,7 @@ define(function (require) {
                 id = 'meInfoPage';
                 break;
             case this.PAGE_DIARIES_INDEX:
-                id = 'diaresPage';
+                id = 'diariesPage';
                 break;
             case this.PAGE_SETTING_INDEX:
                 id = 'settingPage';
