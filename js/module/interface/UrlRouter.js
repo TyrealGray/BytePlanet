@@ -12,18 +12,21 @@ define(function (require, exports) {
         });
 
         switch (hash) {
-        case '':
-        case '#/home':
-            $('#homePage').show();
-            break;
-        case '#/meInfo':
-            $('#meInfoPage').show();
-            break;
-        case '#/setting':
-            $('#settingPage').show();
-            break;
-        default:
-            break;
+            case '':
+            case '#/home':
+                $('#homePage').show();
+                break;
+            case '#/meInfo':
+                $('#meInfoPage').show();
+                break;
+            case '#/diaries':
+                $('#diariesPage').show();
+                break;
+            case '#/setting':
+                $('#settingPage').show();
+                break;
+            default:
+                break;
         }
     }
 
