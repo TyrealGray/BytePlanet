@@ -17,7 +17,7 @@ define({
         Resume: '继续'
     }, MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'看起来澳大利亚的那家公司面试失败了，或许留学成了唯一的途径'
+        RecentlyMove:'练英语，准备面试，就这样'
     },
     LanguageSettingPage: {
         Setting: '设置',
