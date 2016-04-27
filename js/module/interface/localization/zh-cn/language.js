@@ -15,9 +15,14 @@ define({
         Pause: '暂停',
         Cancel: '取消',
         Resume: '继续'
-    }, MeInfoPage: {
+    }, 
+    MeInfoPage: {
         Title:'我的名字叫TyrealGray',
         RecentlyMove:'练英语，准备面试，就这样'
+    },
+    DiariesPage:{
+        Title:'标题',
+        Date:'日期'
     },
     LanguageSettingPage: {
         Setting: '设置',

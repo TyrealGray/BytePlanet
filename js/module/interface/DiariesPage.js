@@ -4,6 +4,8 @@ define(function (require) {
     var Mustache = require('mustache'),
 
         InheritHelper = require('lib/InheritHelper'),
+        
+        GlobalVar = require('module/GlobalVar'),
 
         TemperatureManager = require('module/component/TemperatureManager'),
 
@@ -21,8 +23,14 @@ define(function (require) {
     DiariesPage.prototype.INDEX = 2;
     
     DiariesPage.prototype.getContent = function () {
+        
+        var language = GlobalVar.language.DiariesPage;
 
-        return Mustache.render(DiariesPageTemplate);
+        return Mustache.render(DiariesPageTemplate,{
+            TitleText:language.Title,
+            DateText:language.Date,
+            tableBody:'test'
+        });
     };
 
     return DiariesPage;

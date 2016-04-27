@@ -2,12 +2,12 @@
 define({
     "root": {
         MainContent: {
-            Github:'Github'
+            Github: 'Github'
         },
         LeftCanvas: {
             Home: 'Home',
-            MeInfo:'About Myself',
-            Diary:'Diary',
+            MeInfo: 'About Myself',
+            Diary: 'Diary',
             Setting: 'Setting',
         },
         HomePage: {
@@ -17,8 +17,12 @@ define({
             Resume: 'Resume'
         },
         MeInfoPage: {
-            Title:'My name is TyrealGray',
-            RecentlyMove:'Practice English, prepare interview, that\'s all!'
+            Title: 'My name is TyrealGray',
+            RecentlyMove: 'Practice English, prepare interview, that\'s all!'
+        },
+        DiariesPage: {
+            Title: 'Title',
+            Date: 'Date'
         },
         LanguageSettingPage: {
             Setting: 'Setting',
