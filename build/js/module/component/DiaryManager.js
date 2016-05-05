@@ -1,1 +1,1 @@
-;
+define(["require"],function(e){"use strict";function t(){this._diaryList=[]}return t.prototype.init=function(e){if(-1!=e.indexOf("zh")){this._initChineseDiaries();return}this._initEnglishDiaries()},t.prototype._initEnglishDiaries=function(){},t.prototype._initChineseDiaries=function(){},t.prototype.getList=function(){return this._diaryList},t});
