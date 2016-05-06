@@ -6,7 +6,6 @@
         i18n: 'thirdLib/requirejs/i18n',
         text: 'thirdLib/requirejs/text',
         mustache: 'thirdLib/mustache.min',
-        PDFJS: 'thirdLib/pdfjs/pdf',
         backbone: 'thirdLib/backbonejs/backbone-min',
         underscore: 'thirdLib/backbonejs/underscore-min',
         jquery: 'thirdLib/foundationjs/vendor/jquery.min',

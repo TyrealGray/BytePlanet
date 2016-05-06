@@ -19,7 +19,11 @@ define(function (require) {
     };
     
     DiaryManager.prototype._initChineseDiaries = function(){
-        
+        this._addDiary({index:0,title:'chTitle',date:'1900.01.01'});
+    };
+    
+    DiaryManager.prototype._addDiary = function(diary){
+        this._diaryList.push(diary);
     };
     
     DiaryManager.prototype.getList = function() {
