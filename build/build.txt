@@ -33,7 +33,9 @@ text!module/../../html/HomePage.html
 js/module/interface/HomePage.js
 text!module/../../html/MeInfoPage.html
 js/module/interface/MeInfoPage.js
+js/module/component/DiaryManager.js
 text!module/../../html/DiariesPage.html
+text!module/../../html/diariesTable/tableBody.html
 js/module/interface/DiariesPage.js
 text!module/../../html/LanguageSettingPage.html
 js/module/interface/LanguageSettingPage.js

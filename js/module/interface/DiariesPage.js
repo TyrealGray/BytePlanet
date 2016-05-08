@@ -13,7 +13,7 @@ define(function (require) {
 
         DiariesPageTemplate = require('text!../../../html/DiariesPage.html'),
         
-        DiariesTableBodyTemplate = require('text!../../../html/diraiesTable/tableBody.html');
+        DiariesTableBodyTemplate = require('text!../../../html/diariesTable/tableBody.html');
 
     function DiariesPage() {
 
