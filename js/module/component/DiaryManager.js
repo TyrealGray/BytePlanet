@@ -1,34 +1,17 @@
-define(function (require) {
+define(function (require, exports) {
     'use strict';
 
-    function DiaryManager() {
-        this._diaryList = [];
-    }
-    
-    DiaryManager.prototype.init = function(language){
-        if(-1 != language.indexOf("zh")){
-            this._initChineseDiaries();
-            return;
-        }
-        
-        this._initEnglishDiaries();
-    };
-    
-    DiaryManager.prototype._initEnglishDiaries = function(){
-        
-    };
-    
-    DiaryManager.prototype._initChineseDiaries = function(){
-        this._addDiary({index:0,title:'chTitle',date:'1900.01.01'});
-    };
-    
-    DiaryManager.prototype._addDiary = function(diary){
-        this._diaryList.push(diary);
-    };
-    
-    DiaryManager.prototype.getList = function() {
-        return this._diaryList;
-    }
+    var englishDiaries = [{ index: 1, title: 'EnglishTilte', date: '1900.01.01' }],
+        chineseDiaries = [{ index: 0, title: '中文标题', date: '1900.01.01' }];
 
-    return DiaryManager;
+    function getDiariesList(language) {
+
+        if (-1 != language.indexOf("zh")) {
+            return chineseDiaries;
+        }
+
+        return englishDiaries;
+    };
+
+    exports.getDiariesList = getDiariesList;
 });
