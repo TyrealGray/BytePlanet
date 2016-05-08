@@ -4,7 +4,7 @@ define(function (require, exports) {
     var englishDiaries = [{ index: 1, title: 'EnglishTilte', date: '1900.01.01' }],
         chineseDiaries = [{ index: 0, title: '中文标题', date: '1900.01.01' }];
 
-    function getDiariesList(language) {
+    function getList(language) {
 
         if (-1 != language.indexOf("zh")) {
             return chineseDiaries;
@@ -13,5 +13,5 @@ define(function (require, exports) {
         return englishDiaries;
     };
 
-    exports.getDiariesList = getDiariesList;
+    exports.getList = getList;
 });
