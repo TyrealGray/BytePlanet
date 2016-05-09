@@ -18,11 +18,20 @@ define(function (require) {
     function DiariesPage() {
 
         this.superClass();
+        
+        this._bindEvent();
     }
 
     InheritHelper.inheritPrototype(DiariesPage, CentreContentPage);
 
     DiariesPage.prototype.INDEX = 2;
+    
+    DiariesPage.prototype._bindEvent = function(){
+        
+        $('.diaryTitle').click(function(event){
+           //TODO get the index and query the diary html
+        });
+    };
 
     DiariesPage.prototype.getContent = function () {
 

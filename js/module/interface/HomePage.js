@@ -29,12 +29,6 @@ define(function (require) {
         return Mustache.render(HomePageTemplate);
     };
 
-    HomePage.prototype._init = function () {
-
-        this.disable(false);
-
-    };
-
     HomePage.prototype.update = function () {
 
     };
