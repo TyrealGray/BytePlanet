@@ -3,7 +3,7 @@ define(function (require, exports) {
     
     function queryDiary(index, sucessCallback, errorCallback) {
         
-        var urlpath = '/html/diary/' + index + '.html';
+        var urlPath = '/html/diary/' + index + '.html';
 
         $.ajax({
             type: 'GET',
