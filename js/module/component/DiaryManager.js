@@ -1,8 +1,8 @@
 define(function (require, exports) {
     'use strict';
 
-    var englishDiaries = [{ index: 1, title: 'EnglishTilte', date: '1900.01.01' }],
-        chineseDiaries = [{ index: 0, title: '中文标题', date: '1900.01.01' }];
+    var englishDiaries = [{ index: 1, title: 'export 3dmax model to UE4(Chinese)', date: '2015.05.10' }],
+        chineseDiaries = [{ index: 0, title: '關於遊戲建模導入虛幻4', date: '2015.05.10' }];
 
     function getList(language) {
 
