@@ -13,6 +13,9 @@
 .icon-size-3 {
     font-size: 3em;
 }
+.diaryTitle {
+    cursor: pointer;
+}
 .dataTables_length {
     padding-right: 5em;
 }

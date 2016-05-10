@@ -1,1 +1,46 @@
-get diary test content
+<h2><a href="http://tyrealgray.tumblr.com/post/119081005587/關於遊戲建模導入虛幻4">關於遊戲建模導入虛幻4</a></h2>
+
+<div>
+    <p><b>遊戲建模曾經是程序員的活，後來發現這部分工作既費時又不討好。懶惰的程序員就如寫工具一樣把建模的數據工作寫成了如今的maya、3dmax這類軟件。如今，遊戲美工也成為遊戲行業中必不可少的一個分支。但是獨立遊戲開發者可能就沒有那麼輕鬆了，遊戲建模自然就落到了自己的頭上。什麼？你說你的遊戲是2d的？那可能更煩人，因為你得把遊戲人物沒一幀的素材找好排序，製作理解起來可能更容易，做起來就更費事了。</b></p>
+    <hr>
+    <p>Minecraft是一個很好的例子。裏面的建模相信每一個看到的人都會留下深刻的印象。方塊，粗糙的材質貼圖，就是這樣一個毫不“美麗”的遊戲，卻幾乎成為了世界第一的熱門遊戲。拋開他的作者糟糕的代碼，可以說遊戲的玩法和多樣性拯救了這款遊戲。獨立遊戲不可能有很多精力放在建模上，所以遊戲性的多樣才是成功的關鍵。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/e537f21d55a8ea182092fd3d8fb6bf8d/tumblr_inline_nofbs8jZTT1tuwv4e_500.jpg" alt="image"></figure>
+    <hr>
+    <p>但是總之一句話，用3dmax這些工具建立一些簡單或者複雜的模型也好，不要嘗試用代碼去建模，那樣是費力不討好的事情。</p>
+    <hr>
+    <p>最近剛剛學會了建模，並且在嘗試把他們導入到虛幻4中的時候遇到了一些問題。特別是骨骼動畫的導入，製造了很多的麻煩。最後研究了很久才知道，導入模型和動畫要分開兩次導入，感謝answerHub君，感謝google君。废话说的优点多，下面进入正题吧。</p>
+    <p>具首先是要做好人物模型，並建立好骨骼。这个不用多说。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/442144de177d9d65a6553659d64d422a/tumblr_inline_nofc5wMa4M1tuwv4e_500.png" alt="image"></figure>
+    <p>=，=我的人物是這個樣子的。</p>
+    <p>然後記得ki解算一下骨骼哦，不然怎麼做骨骼動畫嘛。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/3a2608440393501b4ea10831efd5682d/tumblr_inline_nofc7hbk351tuwv4e_500.png" alt="image"></figure>
+    <p>到了這一步，我們的模型就可以導入虛幻4了。虛幻4支持的模型格式支持fbx，我們首先只導出模型和骨骼，命名它為man.fbx好了。</p>
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/e1e625b61c72743471656e379b6a8ab2/tumblr_inline_nofc9xXgmk1tuwv4e_500.png" alt="image"></figure>
+    <p>記得導出模型和骨骼時要選上平滑組。</p>
+    <p>然後我們再導出我們的骨骼動畫。</p>
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/9220322fe4b5d5ecb41db085b4f4da53/tumblr_inline_nofccoupoG1tuwv4e_500.png" alt="image"></figure>
+    <p>還是一樣，導出的時候要選上平滑組，並且把烘培動畫選上，並且全部重採樣。</p>
+    <p>導出名字就叫man_walk.fbx吧。</p>
+    <figure class="tmblr-full"><img src="http://65.media.tumblr.com/544cbe1b91f51a0f27fba8ae201a75e0/tumblr_inline_nofcgtokDv1tuwv4e_500.png" alt="image"></figure>
+    <p>這時我的fbx文件已經在桌面上準備就緒了，隨時可以導入。</p>
+    <hr>
+    <p>導入到虛幻4很好理解，第一次先導入模型。按導入按鈕選擇man.fbx，然後點導入全部。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/57b13e5845b4178c5d060161961de357/tumblr_inline_nofcnocsbb1tuwv4e_500.png" alt="image"></figure>
+    <p>這個時候你會看到內容介面裏面多了3個文件。</p>
+    <figure><img src="http://66.media.tumblr.com/f636c279dbc043833dcbc21c13330a02/tumblr_inline_nofcpamcGA1tuwv4e_400.png" alt="image"></figure>
+    <p>不管它們，繼續導入骨骼動畫。</p>
+    <p>這個時候懸著導入man_walk.fbx，記得要把之前的骨骼選擇上，告訴虛幻4我們的這個骨骼動畫是屬於之前man.fbx的。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/c6dedcbc12d39b5e691cc2c63388ea13/tumblr_inline_nofcwxiQnI1tuwv4e_500.png" alt="image"></figure>
+    <p>並且選中import animations，然後導入。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/dd5b3daac7bf8a4774419d7364f11c2d/tumblr_inline_nofcx5Y5Mn1tuwv4e_500.png" alt="image"></figure>
+    <p>現在刪除多餘的兩個文件，只留下man_walk虛幻4動畫文件。</p>
+    <figure class="tmblr-full"><img src="http://65.media.tumblr.com/c8b0d9585c2d82a0b16bbec76e452ab0/tumblr_inline_nofcz1ga6x1tuwv4e_400.png" alt="image"></figure>
+    <p>雙擊man_walk_anim文件，你會看到以下介面。如果覺得動畫的時間軸有問題，還可以右鍵點擊最下面的時間軸進行刪除修改。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/1d9eb8c2a8d54fc583e4b57d1014f296/tumblr_inline_nofd4v2MbB1tuwv4e_500.png" alt="image"></figure>
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/b8882747c61ef7ec10dc80de0f661655/tumblr_inline_nofd3sXe5p1tuwv4e_500.png" alt="image"></figure>
+    <hr>
+    <p>到此，導入一個人物和人物的骨骼模型都大功告成了。剩下的就是把它用到你的遊戲里了。</p>
+    <p>另外如果覺得自動生成的人物物理碰撞體不好，其實可以直接刪掉。我反正是直接刪掉了。精力有限沒時間搗鼓啊。</p>
+    <hr>
+    <p><b>另外有需要討論的技術問題可以加入QQ群302281607來一起討論，期待你的加入。</b></p>
+</div>
