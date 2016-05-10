@@ -3,7 +3,7 @@ define(function (require, exports) {
     
     function queryDiary(index, sucessCallback, errorCallback) {
         
-        var urlPath = '/html/diary/' + index + '.html';
+        var urlPath = '/BytePlanet/build/html/diary/' + index + '.html';
 
         $.ajax({
             type: 'GET',
