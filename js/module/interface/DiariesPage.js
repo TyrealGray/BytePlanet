@@ -4,6 +4,8 @@ define(function (require) {
     var Mustache = require('mustache'),
 
         InheritHelper = require('lib/InheritHelper'),
+        
+        DiaryAgent = require('module/agent/DiaryAgent'),
 
         GlobalVar = require('module/GlobalVar'),
 
@@ -28,8 +30,21 @@ define(function (require) {
     
     DiariesPage.prototype._bindEvent = function(){
         
+        var scope = this;
+        
         $('.diaryTitle').click(function(event){
-           //TODO get the index and query the diary html
+            
+           var index = $(this).data('index');
+           
+           DiaryAgent.queryDiary(index,function(data){
+               
+               $('#mainModalContent').html(data);
+               
+               $('#mainModal').foundation('open');
+           },function(error){
+               scope.notifyErrorMessage(error);
+           });
+           
         });
     };
 
