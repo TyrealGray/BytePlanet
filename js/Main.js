@@ -63,9 +63,9 @@ define(function (require) {
 
     function loadCssFiles() {
         var fileNames = [
-                'css/foundation.min.css',
-                'css/foundation-icons.css',
-                'css/app.css'
+                'build/css/foundation.min.css',
+                'build/css/foundation-icons.css',
+                'build/css/app.css'
             ];
 
         fileNames.forEach(function (fileName) {
