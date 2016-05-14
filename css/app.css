@@ -23,7 +23,7 @@
 }
 
 .diaryContext {
-    background-image: url(source/diray/diraybg.jpg);
+    background-image: url(../source/diray/diraybg.jpg);
     background-size: 100%;
     -moz-background-size: 100%;
     background-repeat: no-repeat;
