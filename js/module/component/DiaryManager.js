@@ -2,7 +2,7 @@ define(function (require, exports) {
     'use strict';
 
     var englishDiaries = [
-        { index: 1, title: 'export 3dmax model to UE4(Chinese)', date: '2015.05.10' },
+        { index: 1, title: 'export 3dmax model to UE4', date: '2015.05.10' },
         { index: 3, title: 'module programming in UE4(Chinese)', date: '2015.5.22' }
     ],
         chineseDiaries = [
