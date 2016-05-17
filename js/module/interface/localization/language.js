@@ -18,7 +18,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is TyrealGray',
-            RecentlyMove: 'Practice English, prepare interview, that\'s all!'
+            RecentlyMove: 'I guess that would be the end of this short turn seeking.I trird,I fought,I gave everything I have.'
         },
         DiariesPage: {
             Title: 'Title',

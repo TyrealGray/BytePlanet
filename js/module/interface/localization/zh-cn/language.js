@@ -18,7 +18,7 @@ define({
     }, 
     MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'练英语，准备面试，就这样'
+        RecentlyMove:'最近在linkedin上找工作，几乎把能找的都投遍了。效果并不理想，的确不想花父母的钱去读书，自己热爱编程这份工作。或许这段旅途就这么结束了吧！'
     },
     DiariesPage:{
         Title:'标题',
