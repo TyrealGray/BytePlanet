@@ -18,7 +18,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is TyrealGray',
-            RecentlyMove: 'Do not give up,never give up.'
+            RecentlyMove: 'IELTS test is finished,now what\'s the next?'
         },
         DiariesPage: {
             Title: 'Title',
