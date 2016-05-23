@@ -69,7 +69,7 @@
     <ol>
         <li><b>OutExtraModuleNames.AddRange( new string[] { “MainModule”,“TestModule” } );</b><br></li>
     </ol>
-    <p>然後在虛幻4工程文件<b>MainModule.uproject</b>中的<b>“Module”</b>關鍵值中加入一組：</p>
+    <p>then edit <b>MainModule.uproject</b> which in <b>“Module”</b>code block:</p>
     <ol>
         <li><b>“Modules”: [</b><br></li>
         <li><b>{</b><br></li>
@@ -87,17 +87,14 @@
         <li><b>}</b><br></li>
         <li><b>]</b><br></li>
     </ol>
-    <p>最後，雙擊
+    <p>at last,open 
 
-        <b>MainModule.uproject</b>並且重新刷新<b>vs</b>項目代碼，我們就可以得到這樣的結構了</p>
+        <b>MainModule.uproject</b>and refresh <b>vs</b> code project,we might have this structure</p>
     <figure class="tmblr-full"><img src="http://67.media.tumblr.com/eeb38940a9a0eaca3c26240055da7f49/tumblr_inline_np68z42jwv1tuwv4e_400.png" alt="image"></figure>
-    <p>這個時候，在<b>editor</b>中，添加<b>C++</b>代碼時，也能夠看到</p>
+    <p>now,when you use <b>editor</b> adding <b>C++</b>classes,you would see something like this:</p>
     <figure class="tmblr-full"><img src="http://67.media.tumblr.com/f563ea854d3fd55a9160d58d65928169/tumblr_inline_np690mewyF1tuwv4e_500.png" alt="image"></figure>
-    <p>另外<b>需要注意的就是</b>你在<b>TestModlue</b>下生成的類，例如<b>Actor</b>類，在<b>.h</b>頭文件中，需要記得應用
-
-        <b>Engine.h</b>頭文件。</p>
     <hr>
-    <p>至此，所有建立模塊化的步驟都大功告成了。在<b>TestModule</b>中寫好代碼之後，直接拷貝<b>TestModule</b>到其他項目，也可以直接使用了。是不是很方便呢？</p>
+    <p>now you can use and move <b>TestModule</b>to any UE4 vs project!</p>
     <p><br></p>
-    <p>最後，歡迎大家加入QQ群302281607加入到虛幻4開發技術的討論當中來。</p>
+    <p>If you have any problem ,just tell me!</p>
 </div>
