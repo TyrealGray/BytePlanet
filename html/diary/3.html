@@ -7,7 +7,7 @@
     <figure class="tmblr-full"><img src="http://65.media.tumblr.com/0f7fb65dc46f48a15500776af9aeeb92/tumblr_inline_np63cpyvd51tuwv4e_500.png" alt="image"></figure>
     <p>click in<b>TestModule</b>folder then build <b>Public</b> and <b>Private</b>folder with <b>TestModule.Build.cs</b></p>
     <figure class="tmblr-full"><img src="http://66.media.tumblr.com/169f3a8ce3004851fd535a88386c6147/tumblr_inline_np688kC80b1tuwv4e_500.png" alt="image"></figure>
-    <p>然後，在<b>Public</b>文件夾中，生成<b>TestModule.h</b>，內容如下：</p>
+    <p>next ,in the <b>Public</b>folder,create <b>TestModule.h</b>,and here is the context:</p>
     <ol>
         <li><b>#pragma once<br></b></li>
         <li><b>#include “ModuleManager.h”<br></b></li>
@@ -20,7 +20,7 @@
         <li><b>};</b></li>
     </ol>
     <hr>
-    <p>然後在<b>Private</b>文件中生成<b>TestModule.cpp</b>，內容如下：</p>
+    <p>and in<b>Private</b>folder,create <b>TestModule.cpp</b>,context:</p>
     <ol>
         <li><b>#include “TestModule.h”<br></b></li>
         <li><b>void TestModuleImpl::StartupModule()<br></b></li>
@@ -36,7 +36,7 @@
     <hr>
     <p>
 
-        然後在<b>Private</b>文件中生成<b>TestModulePrivatePCH.h</b>，它可以引用一些通用的虛幻4公共頭文件,例如：
+        and in<b>Private</b>folder,create <b>TestModulePrivatePCH.h</b>,you can use this head file to include common UE4 head file,such like:
 
         <br></p>
     <ol>
@@ -46,7 +46,7 @@
     <hr>
     <p>
 
-        然後在<b>TestModule.Build.cs</b>中寫入如下：</p>
+        and then,looking at<b>TestModule.Build.cs</b>and rewrite :</p>
     <ol>
         <li><b>using UnrealBuildTool;<br></b></li>
         <li><b>public class TestModule : ModuleRules<br></b></li>
@@ -61,11 +61,11 @@
         <li><b>}</b><br></li>
     </ol>
     <hr>
-    <p>完成上述編碼後，在<b>MainModule.Target.cs</b>和<b>MainModuleEditor.Target.cs</b>中都將</p>
+    <p>edit both codes in <b>MainModule.Target.cs</b> and <b>MainModuleEditor.Target.cs</b> </p>
     <ol>
         <li><b>OutExtraModuleNames.AddRange( new string[] { “MainModule” } );</b><br></li>
     </ol>
-    <p>改為</p>
+    <p>to</p>
     <ol>
         <li><b>OutExtraModuleNames.AddRange( new string[] { “MainModule”,“TestModule” } );</b><br></li>
     </ol>
