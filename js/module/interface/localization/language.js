@@ -2,7 +2,8 @@
 define({
     "root": {
         MainContent: {
-            Github: 'Github'
+            Github: 'Github',
+            Twitter:'Twitter'
         },
         LeftCanvas: {
             Home: 'Home',

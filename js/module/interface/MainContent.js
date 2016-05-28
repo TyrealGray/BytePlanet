@@ -68,10 +68,8 @@ define(function (require) {
         var language = GlobalVar.language.MainContent;
 
         $('#content').html(Mustache.render(MainContentTemplate, {
-            PageCameraText: language.Camera,
-            TakePhotoText: language.TakePhoto,
-            StopImmediatelyText: language.StopImmediately,
             GithubText:language.Github,
+            TwitterText:language.Twitter,
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
