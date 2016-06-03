@@ -18,7 +18,7 @@ define({
     }, 
     MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'雅思已考完，接下来又是什么呢？'
+        RecentlyMove:'成功拿到德国公司offer！新的挑战即将开始！'
     },
     DiariesPage:{
         Title:'标题',
