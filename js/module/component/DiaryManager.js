@@ -18,6 +18,11 @@ define(function (require, exports) {
 
         return englishDiaries;
     };
+    
+    function searchDiary(keyword) {
+        
+    }
 
     exports.getList = getList;
+    exports.searchDiary = searchDiary;
 });
