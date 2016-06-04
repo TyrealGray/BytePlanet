@@ -22,10 +22,11 @@ define(function (require, exports) {
     function searchDiary(keyword) {
 
         var result = null;
+        
         if (-1 != language.indexOf("zh")) {
             result = this._getChineseDiaryByKeyWord(keyword);
         } else {
-
+            result = this._getEnglishDiaryByKeyWord(keyword);
         }
 
         return result;
