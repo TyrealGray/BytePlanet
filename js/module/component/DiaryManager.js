@@ -18,9 +18,25 @@ define(function (require, exports) {
 
         return englishDiaries;
     };
-    
+
     function searchDiary(keyword) {
-        
+
+        var result = null;
+        if (-1 != language.indexOf("zh")) {
+            result = this._getChineseDiaryByKeyWord(keyword);
+        } else {
+
+        }
+
+        return result;
+    }
+
+    function _getChineseDiaryByKeyWord(keyword) {
+
+    }
+
+    function _getEnglishDiaryByKeyWord(keyword) {
+
     }
 
     exports.getList = getList;
