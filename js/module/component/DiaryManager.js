@@ -33,7 +33,13 @@ define(function (require, exports) {
     }
 
     function _getChineseDiaryByKeyWord(keyword) {
-
+        var diaries = [];
+        
+        chineseDiaries.forEach(function(diary) {
+            
+        }, this);
+        
+        return diaries;
     }
 
     function _getEnglishDiaryByKeyWord(keyword) {
