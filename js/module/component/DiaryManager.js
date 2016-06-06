@@ -28,26 +28,36 @@ define(function (require, exports) {
         var result = null;
         
         if (-1 != language.indexOf("zh")) {
-            result = this._getChineseDiaryByKeyWord(keyword);
+            result = this._getChineseDiaryByKeyword(keyword);
         } else {
-            result = this._getEnglishDiaryByKeyWord(keyword);
+            result = this._getEnglishDiaryByKeyword(keyword);
         }
 
         return result;
     }
 
-    function _getChineseDiaryByKeyWord(keyword) {
-        var diaries = [];
+    function _getChineseDiaryByKeyword(keyword) {
         
-        chineseDiaries.forEach(function(diary) {
+        return this._getDiaryByKeyword(chineseDiaries);
+    }
+
+    function _getEnglishDiaryByKeyword(keyword) {
+                
+        return this._getDiaryByKeyword(englishDiaries);
+    }
+    
+    function _getDiaryByKeyword(diaries) {
+        var result = [];
+        
+        diaries.forEach(function(diary) {
+            
+            if(-1 !== diray.keyword.indexOf(keyword)){
+                result.push(diary);
+            }
             
         }, this);
         
-        return diaries;
-    }
-
-    function _getEnglishDiaryByKeyWord(keyword) {
-
+        return result;
     }
 
     exports.getList = getList;
