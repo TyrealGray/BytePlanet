@@ -28,25 +28,25 @@ define(function (require, exports) {
         var result = null;
         
         if (-1 != language.indexOf("zh")) {
-            result = this._getChineseDiaryByKeyword(keyword);
+            result = getChineseDiaryByKeyword(keyword);
         } else {
-            result = this._getEnglishDiaryByKeyword(keyword);
+            result = getEnglishDiaryByKeyword(keyword);
         }
 
         return result;
     }
 
-    function _getChineseDiaryByKeyword(keyword) {
+    function getChineseDiaryByKeyword(keyword) {
         
-        return this._getDiaryByKeyword(chineseDiaries);
+        return getDiaryByKeyword(chineseDiaries);
     }
 
-    function _getEnglishDiaryByKeyword(keyword) {
+    function getEnglishDiaryByKeyword(keyword) {
                 
-        return this._getDiaryByKeyword(englishDiaries);
+        return getDiaryByKeyword(englishDiaries);
     }
     
-    function _getDiaryByKeyword(diaries) {
+    function getDiaryByKeyword(diaries) {
         var result = [];
         
         diaries.forEach(function(diary) {
