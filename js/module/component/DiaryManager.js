@@ -8,11 +8,13 @@ define(function (require, exports) {
         date: '2015.05.22' }
     ],
         chineseDiaries = [
-            { index: 0, title: '關於遊戲建模導入虛幻4', keyword:'3dmax model ue4' ,
+            {index: 0, title: '關於遊戲建模導入虛幻4', keyword:'3dmax model ue4' ,
             date: '2015.05.10' },
-            { index: 2, title: '虛幻4在開發中的模塊化編程',keyword:'模块化 ue4' , 
-            date: '2015.05.22' }
-        ];
+            {index: 2, title: '虛幻4在開發中的模塊化編程',keyword:'模块化 ue4' , 
+            date: '2015.05.22' },
+            {index:4,title:'在requirejs中使用jasmine', keyword:'requirejs jasmine javascript',
+        date:'2016.06.09'}
+  ];
 
     function getList(language) {
 
