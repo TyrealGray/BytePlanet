@@ -1,12 +1,12 @@
-<div class="callout">
-    <div class="diaryContext">
-        <p>
-            这是一个我在网上找到的实例，但是具体实施的时候，specRunner.js运行的时候出现了jasmineRequire未定义的错误。 思考了一下之后发现可能是设置requirejs的config时，boot.js的依赖没有起到作用。所以我的代码实例是在require(['boot'])时，
-            在上面加上了require('jasmine')，并且把require(['boot'])改为了require(['jasmine-html','boot'])。 这是我的解决方案，仅供参考。
-        </p>
+<div class="diaryContext">
+    <p>
+        这是一个我在网上找到的实例，但是具体实施的时候，specRunner.js运行的时候出现了jasmineRequire未定义的错误。
+        思考了一下之后发现可能是设置requirejs的config时，boot.js的依赖没有起到作用。所以我的代码实例是在require(['boot'])时，
+        在上面加上了require('jasmine')，并且把require(['boot'])改为了require(['jasmine-html','boot'])。 这是我的解决方案，仅供参考。
+    </p>
 
-        <p>SpecRunner.html</p>
-
+    <p>SpecRunner.html</p>
+    <div class="callout">
         <pre><code>&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -23,9 +23,10 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+    </div>
 
-        <p>specRunner.js</p>
-
+    <p>specRunner.js</p>
+    <div class="callout">
         <pre><code>(function() {
   'use strict';
 
@@ -72,9 +73,9 @@
   });
 })();
 </code></pre>
-
-        <p>Example spec</p>
-
+    </div>
+    <p>Example spec</p>
+    <div class="callout">
         <pre><code>define(['router'], function(router) {
   'use strict';
 
