@@ -1,5 +1,8 @@
 <div class="diaryContext">
     <p>
+        I find this example on internet, when I install jasmine in requirejs, it error 
+        jasmineRequire not defined. I think it caused by require.config ,so I add "require('jasmine')" before 
+        "require(['boot'])" and change it became "require(['jasmine-html','boot'])". And then jasmine work.
         The new boot.js does a bunch of the initialization and attaches it to window.onload() which has already been called by the time require.js loads Jasmine. 
         You can manually call window.onload() to initialize the HTML Reporter and execute the environment.
     </p>
