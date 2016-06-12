@@ -46,6 +46,10 @@ define(function (require) {
            });
            
         });
+
+        $('#searchDiary').click(function(event){
+            //TODO search diares
+        });
     };
 
     DiariesPage.prototype.getContent = function () {
