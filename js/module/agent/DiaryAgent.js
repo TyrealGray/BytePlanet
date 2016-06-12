@@ -1,11 +1,11 @@
 define(function (require, exports) {
     'use strict';
-    
+
     function queryDiary(index, sucessCallback, errorCallback) {
-        
-        // var urlPath = '/BytePlanet/build/html/diary/' + index + '.html';
-        var urlPath = '/html/diary/' + index + '.html';
-        
+
+        var urlPath = '/BytePlanet/build/html/diary/' + index + '.html';
+        // var urlPath = '/html/diary/' + index + '.html';
+
 
         $.ajax({
             type: 'GET',
@@ -21,6 +21,6 @@ define(function (require, exports) {
             }
         });
     }
-    
+
     exports.queryDiary = queryDiary;
 });
