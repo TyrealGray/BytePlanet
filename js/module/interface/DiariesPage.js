@@ -49,6 +49,11 @@ define(function (require) {
 
         $('#searchDiary').click(function (event) {
             //TODO search diares
+            var keyword = $('diaryKeyword').value();
+
+            var diaries = DiaryManager.searchDiary(keyword);
+
+            
         });
     };
 
