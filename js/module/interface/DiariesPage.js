@@ -49,11 +49,11 @@ define(function (require) {
 
         $('#searchDiary').click(function (event) {
             //TODO search diares
-            var keyword = $('diaryKeyword').value();
+            var keyword = $('#diaryKeyword').val();
 
-            var diaries = DiaryManager.searchDiary(keyword);
+            var diaries = DiaryManager.searchDiary(keyword,locale);
 
-            $('diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
+            $('#diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
                 tableItems: diaries
             }));
         });

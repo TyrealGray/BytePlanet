@@ -27,7 +27,7 @@ define(function (require, exports) {
         return englishDiaries;
     };
 
-    function searchDiary(keyword) {
+    function searchDiary(keyword,language) {
 
         var result = null;
         
@@ -42,20 +42,20 @@ define(function (require, exports) {
 
     function getChineseDiaryByKeyword(keyword) {
         
-        return getDiaryByKeyword(chineseDiaries);
+        return getDiaryByKeyword(keyword,chineseDiaries);
     }
 
     function getEnglishDiaryByKeyword(keyword) {
                 
-        return getDiaryByKeyword(englishDiaries);
+        return getDiaryByKeyword(keyword,englishDiaries);
     }
     
-    function getDiaryByKeyword(diaries) {
+    function getDiaryByKeyword(keyword,diaries) {
         var result = [];
         
         diaries.forEach(function(diary) {
             
-            if(-1 !== diray.keyword.indexOf(keyword)){
+            if(-1 !== diary.keyword.indexOf(keyword)){
                 result.push(diary);
             }
             
