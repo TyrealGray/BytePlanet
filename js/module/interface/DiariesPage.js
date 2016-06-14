@@ -53,7 +53,9 @@ define(function (require) {
 
             var diaries = DiaryManager.searchDiary(keyword);
 
-            
+            $('diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
+                tableItems: diaries
+            }));
         });
     };
 
