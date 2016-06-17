@@ -30,6 +30,24 @@ define(function (require) {
 
     DiariesPage.prototype._bindEvent = function () {
 
+        this._bindClickTitleEvent();
+
+        $('#searchDiary').click(function (event) {
+            //TODO search diares
+            var keyword = $('#diaryKeyword').val();
+
+            var diaries = DiaryManager.searchDiary(keyword, locale);
+
+            $('#diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
+                tableItems: diaries
+            }));
+
+            this._bindClickTitleEvent();
+        }.bind(this));
+    };
+
+    DiariesPage.prototype._bindClickTitleEvent = function () {
+
         var scope = this;
 
         $('.diaryTitle').click(function (event) {
@@ -45,17 +63,6 @@ define(function (require) {
                 scope.notifyErrorMessage(error);
             });
 
-        });
-
-        $('#searchDiary').click(function (event) {
-            //TODO search diares
-            var keyword = $('#diaryKeyword').val();
-
-            var diaries = DiaryManager.searchDiary(keyword,locale);
-
-            $('#diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
-                tableItems: diaries
-            }));
         });
     };
 
