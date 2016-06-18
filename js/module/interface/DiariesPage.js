@@ -35,25 +35,32 @@ define(function (require) {
         this._bindClickTitleEvent();
 
         $('#searchDiary').click(function (event) {
-            //TODO search diares
-            var keyword = $('#diaryKeyword').val();
-
-            var diaries = DiaryManager.searchDiary(keyword, locale);
-
-            $('#diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
-                tableItems: diaries
-            }));
-
-            this._bindClickTitleEvent();
+            this._onSearchDiaries();
         }.bind(this));
 
-        $('#diaryKeyword').keypress(function(event){
-            if(KEY_ENTER !== e.keyCode){
+        $('#diaryKeyword').keypress(function (event) {
+            if (KEY_ENTER !== event.keyCode) {
                 return;
             }
+            this._onSearchDiaries();
+        }.bind(this));
 
-            
-        });
+        // $('#diaryKeyword').change(function (event) {
+        //     this._onSearchDiaries();
+        // }.bind(this));
+    };
+
+    DiariesPage.prototype._onSearchDiaries = function () {
+
+        var keyword = $('#diaryKeyword').val();
+
+        var diaries = DiaryManager.searchDiary(keyword, locale);
+
+        $('#diaresTableBody').html(Mustache.render(DiariesTableBodyTemplate, {
+            tableItems: diaries
+        }));
+
+        this._bindClickTitleEvent();
     };
 
     DiariesPage.prototype._bindClickTitleEvent = function () {
