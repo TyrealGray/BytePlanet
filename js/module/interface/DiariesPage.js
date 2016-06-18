@@ -1,6 +1,8 @@
 define(function (require) {
     'use strict';
 
+    var KEY_ENTER = 13;
+
     var Mustache = require('mustache'),
 
         InheritHelper = require('lib/InheritHelper'),
@@ -44,6 +46,14 @@ define(function (require) {
 
             this._bindClickTitleEvent();
         }.bind(this));
+
+        $('#diaryKeyword').keypress(function(event){
+            if(KEY_ENTER !== e.keyCode){
+                return;
+            }
+
+            
+        });
     };
 
     DiariesPage.prototype._bindClickTitleEvent = function () {
