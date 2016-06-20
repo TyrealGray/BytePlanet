@@ -18,7 +18,7 @@ define({
     }, 
     MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'成功拿到德国公司offer！新的挑战即将开始！'
+        RecentlyMove:'终于习惯mac os x了。'
     },
     DiariesPage:{
         Title:'标题',
