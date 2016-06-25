@@ -18,7 +18,7 @@ define({
     }, 
     MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'终于习惯mac os x了。'
+        RecentlyMove:'zav果然是麻烦的东西，这下非常尴尬了。'
     },
     DiariesPage:{
         Title:'标题',

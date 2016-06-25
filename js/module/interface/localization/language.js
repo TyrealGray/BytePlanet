@@ -19,7 +19,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is TyrealGray',
-            RecentlyMove: 'Get used to OS X now.'
+            RecentlyMove: 'Now this is very awkward,ZAV might not get my college information,that is really not good.'
         },
         DiariesPage: {
             Title: 'Title',
