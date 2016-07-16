@@ -1,0 +1,44 @@
+<h2>Implement UE4 LAN Network</h2>
+
+<div class="diaryContext">
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/8bfcc1e8e771a6ca750beb5ad598ca94/tumblr_inline_npvpvvN5lU1tuwv4e_500.jpg" alt="image"></figure>
+    <p><b>哦也！！！經過不懈的努力，在虛幻4的Multiplayer Shootout例子的幫助下。終於算是搞懂了虛幻4局域網建立房間的機制。如果覺得官方文檔太長不方便理解的話，這裡分享一下我的實現，幫助小夥伴們理解。</b></p>
+    <hr>
+    <p>首先，你可以自定義一個自己的game instance，當然還要有一個建立房間的按鈕了。除非你要讓和你鏈接的小夥伴用命令行來連接。UMG系統的化很簡單，這裡不再介紹了。</p>
+    <p>我們先來看看按下host game按鈕之後的藍圖方法：</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/024ff8397e59c4ed073d960897746d86/tumblr_inline_npvqc9vhos1tuwv4e_500.jpg" alt="image"></figure>
+    <p>在ui系統中，按鈕調用了game instance中我自定義的事件Host Game Event：</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/6ebd6fa3d1bcc5dc4a6676da702c6169/tumblr_inline_npvqenVRHe1tuwv4e_500.jpg" alt="image"></figure>
+    <p>看吧，其實很簡單。調用Create Session只要傳入當前player controller，第二個參數是當前允許的鏈接總數，也就是房間總人數，然後是是否使用局域網模式，這裡我們設置為true。然後當它success的時候，一切就打工告成了。接著就可以打開遊戲地圖了，我這裡的遊戲地圖為WestTown。建立房間讓局域網內所有人知道的步驟到此也就結束了，此時局域網內的小夥伴應該就能通過Find
+        Session找到你並且用Join Session加入你了。</p>
+    <p>當然啦，建立完房間，還要能搜索房間才行。接著來介紹搜索房間的實現方法。</p>
+    <hr>
+    <p>查找房間功能我們來看藍圖最關鍵的部分，至於ui這麼實現，小夥伴隨意就好了：</p>
+    <figure class="tmblr-full"><img src="http://65.media.tumblr.com/e408a79bd1029bbd924c272326142e55/tumblr_inline_npvr46wnLR1tuwv4e_500.jpg" alt="image"></figure>
+    <p>同樣，如果主機已經Create Session成功的話。這裡我們調用Find Session，成功時，Results裏面有查詢到的Session結果。局域網中有多少房間，Results數組裏面就會裝多少Blueprint Session
+        Result（它的類型）。
+    </p>
+    <p>
+
+        Blueprint Session Result 中有幾個方法：<br></p>
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/5a4482057330a51125fa9604c84fec19/tumblr_inline_npvr9s6Haq1tuwv4e_500.jpg" alt="image"></figure>
+    <p>顧名思義，分別是獲取當前已經加入房間的玩家人數，最大玩家人數，房間的ping值，已經主機名字。通過這幾個方法，就能夠將房間信息呈現給ui，讓加入的小夥伴知道這個房間是否是他想要加入的房間了。</p>
+    <p>然後，如果其中有一條result為你想要加入的房間的話，剩下的最後一個步驟加入進入，聯機就算快完成啦。</p>
+    <hr>
+    <p>要加入也很easy，把你想要加入的房間的查詢結果 Blueprint Session Result输入到Join Session方法中就行了：</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/127812937d49e41ff0ec14737ea8db5d/tumblr_inline_npvrhs0Gyi1tuwv4e_500.jpg" alt="image"></figure>
+    <hr>
+    <p><b>然後，不管是host還是join，之後加入到遊戲場景中的處理邏輯都是一樣的。你需要在Game mode中統一使用OnPostLogin來把玩家刷新到場景中，並且設置玩家可以控制的character：</b></p>
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/4778c803b11861eac27eb6a939b7c731/tumblr_inline_npvrn8maDV1tuwv4e_500.jpg" alt="image"></figure>
+    <p>New Player就是加入的新玩家的player controller的引用。Client Post Login是我自己寫的方法，方便管理。</p>
+    <hr>
+    <p>到這裡，所有工作都大功告成，加入遊戲之後剩下的工作就是玩家開始互動了，獨立遊戲開發還有很長的一段路要走啊。</p>
+    <hr>
+    <p><b><i>ps：如果遇到Create Session不成功報錯的問題，可以找到遊戲工程中的config文件夾，修改DefaultEngine.ini文件，在最後加入：</i></b></p>
+    <ol>
+        <li><b><i>[OnlineSubsystem]<br></i></b></li>
+        <li><b><i>DefaultPlatformService=Null</i></b></li>
+    </ol>
+    <hr>
+    <p><b>如果還有遇到什麼不明白的問題，也可以加入QQ群302281607來一起交流遊戲開發技術</b></p>
+</div>

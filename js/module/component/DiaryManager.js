@@ -13,6 +13,10 @@ define(function (require, exports) {
         {
             index: 5, title: 'using jasmine in requirejs', keyword: 'unit test requirejs jasmine javascript',
             date: '2016.06.09'
+        },
+        {
+            index: 7, title: 'Implement UE4 LAN Network', keyword: 'ue4 lan network',
+            date: '2016.06.28'
         }
     ],
         chineseDiaries = [
@@ -29,8 +33,8 @@ define(function (require, exports) {
                 date: '2016.06.09'
             },
             {
-                index:6, title:'虛幻4局域網功能的實現', keyword:'局域网 ue4 虚幻4 lan',
-                date:'2016.06.28'
+                index: 6, title: '虛幻4局域網功能的實現', keyword: '局域网 ue4 虚幻4 lan',
+                date: '2016.06.28'
             }
         ];
 
