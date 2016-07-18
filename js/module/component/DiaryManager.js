@@ -35,6 +35,10 @@ define(function (require, exports) {
             {
                 index: 6, title: '虛幻4局域網功能的實現', keyword: '局域网 ue4 虚幻4 lan',
                 date: '2016.06.28'
+            },
+            {
+                index: 8, title: '虛幻4尋路系統', keyword: '虚幻4 ue4 寻路 nav',
+                date: '2016.07.18'
             }
         ];
 
