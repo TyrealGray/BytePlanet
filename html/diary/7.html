@@ -4,12 +4,12 @@
     <figure class="tmblr-full"><img src="http://66.media.tumblr.com/8bfcc1e8e771a6ca750beb5ad598ca94/tumblr_inline_npvpvvN5lU1tuwv4e_500.jpg" alt="image"></figure>
     <p><b>oh yeah!!! After my hard work, researching the Multiplayer Shootout example. Finally I figure out how to implement UE4 LAN Network. Here is my example, hope it would help to make you easily understand.</b></p>
     <hr>
-    <p>First of all, you need to create your own game instance,also need a create room button. 當然還要有一個建立房間的按鈕了。除非你要讓和你鏈接的小夥伴用命令行來連接。UMG系統的化很簡單，這裡不再介紹了。</p>
-    <p>我們先來看看按下host game按鈕之後的藍圖方法：</p>
+    <p>First of all, you need to create your own game instance,also need a create room button unless you want user types IP address. UMG system is very simple, no need description.</p>
+    <p>let's see the host game button function in blueprint:</p>
     <figure class="tmblr-full"><img src="http://67.media.tumblr.com/024ff8397e59c4ed073d960897746d86/tumblr_inline_npvqc9vhos1tuwv4e_500.jpg" alt="image"></figure>
-    <p>在ui系統中，按鈕調用了game instance中我自定義的事件Host Game Event：</p>
+    <p>in the ui system, this button trigger custom event "Host Game Event" in game instance: </p>
     <figure class="tmblr-full"><img src="http://67.media.tumblr.com/6ebd6fa3d1bcc5dc4a6676da702c6169/tumblr_inline_npvqenVRHe1tuwv4e_500.jpg" alt="image"></figure>
-    <p>看吧，其實很簡單。調用Create Session只要傳入當前player controller，第二個參數是當前允許的鏈接總數，也就是房間總人數，然後是是否使用局域網模式，這裡我們設置為true。然後當它success的時候，一切就打工告成了。接著就可以打開遊戲地圖了，我這裡的遊戲地圖為WestTown。建立房間讓局域網內所有人知道的步驟到此也就結束了，此時局域網內的小夥伴應該就能通過Find
+    <p>see, it is very easy.調用Create Session只要傳入當前player controller，第二個參數是當前允許的鏈接總數，也就是房間總人數，然後是是否使用局域網模式，這裡我們設置為true。然後當它success的時候，一切就打工告成了。接著就可以打開遊戲地圖了，我這裡的遊戲地圖為WestTown。建立房間讓局域網內所有人知道的步驟到此也就結束了，此時局域網內的小夥伴應該就能通過Find
         Session找到你並且用Join Session加入你了。</p>
     <p>當然啦，建立完房間，還要能搜索房間才行。接著來介紹搜索房間的實現方法。</p>
     <hr>
