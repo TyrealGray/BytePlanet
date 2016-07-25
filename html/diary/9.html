@@ -1,0 +1,17 @@
+<h2>UE4 nav system</h2>
+
+<div class="diaryContext">
+    <p><b>虛幻4有一個很方便的尋路系統，它就是Nav Mesh Bounds開關。如果你想讓一個AI Bot走到指定的地點，這個Nav Mesh是必須事先設置的。當然，動態生成的尋路需求除外。</b></p>
+    <hr>
+    <p>打開虛幻4編輯器，找到左邊的工具欄。看到<b>體積</b>選項裏面，如下：</p>
+    <figure><img src="http://66.media.tumblr.com/db7b64506418754d33c9cd87e6a01de0/tumblr_inline_nrdruyCVoz1tuwv4e_400.png" alt="image"></figure>
+    <p>然後可以拖拽到地圖上。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/3b609ab1e355322f5333bf2561e02614/tumblr_inline_nrdrwhyAl41tuwv4e_500.png" alt="image"></figure>
+    <p>這個時候我們可以把整個地圖用這個Nav Mesh包起來，然後點擊<b>鍵盤p鍵</b>就可以看到自動識別出來的可以走到的地方。</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/1d5b6bdd15eb69edcc17949aa18f4613/tumblr_inline_nrdslhD9541tuwv4e_500.png" alt="image"></figure>
+    <hr>
+    <p>然後，我們建立一個空的Charactor，然後在它的藍圖中按照如下圖進行設置，它在遊戲開始之後就會走到（100，200，300）這個點上了（前提是這個點在尋路Nav Mesh之內）：</p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/bd140048d398c00f0d81f4875b3346f6/tumblr_inline_nrds5qF2tU1tuwv4e_500.png" alt="image"></figure>
+    <hr>
+    <p>尋路設置有了，其他ai實現就非常簡單了，希望對大家編寫ai有幫助。如果還有什麼不清楚的地方，可以加入遊戲技術開發交流QQ群進行討論：302281607。</p>
+</div>
