@@ -17,6 +17,10 @@ define(function (require, exports) {
         {
             index: 7, title: 'Implement UE4 LAN Network', keyword: 'ue4 lan network',
             date: '2016.06.28'
+        },
+        {
+            index: 9, title: 'ue4 Nav system', keyword: 'ue4 nav',
+            date: '2016.07.18'
         }
     ],
         chineseDiaries = [
