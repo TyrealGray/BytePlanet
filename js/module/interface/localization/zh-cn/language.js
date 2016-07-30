@@ -18,7 +18,7 @@ define({
     }, 
     MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'Yes! ZAV 核准信拿到了!'
+        RecentlyMove:'感冒了'
     },
     DiariesPage:{
         Title:'标题',
