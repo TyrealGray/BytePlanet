@@ -19,7 +19,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is TyrealGray',
-            RecentlyMove: 'so many paperwork!'
+            RecentlyMove: 'one more step, then I fly to Germany!'
         },
         DiariesPage: {
             Title: 'Title',
