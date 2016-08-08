@@ -43,6 +43,10 @@ define(function (require, exports) {
             {
                 index: 8, title: '虛幻4尋路系統', keyword: '虚幻4 ue4 寻路 nav',
                 date: '2016.07.18'
+            },
+            {
+                index: 10, title: '三年码农，拿到德国公司 offer 流程总结', keyword: '德国 offer 工作',
+                date: '2016.06.21'
             }
         ];
 
