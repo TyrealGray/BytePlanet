@@ -1,8 +1,5 @@
 define({
     MainContent: {
-        Camera: '摄像头',
-        TakePhoto: '拍照',
-        StopImmediately: '紧急停止'
     },
     LeftCanvas: {
         Home: '主页',

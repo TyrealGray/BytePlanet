@@ -70,6 +70,7 @@ define(function (require) {
         $('#content').html(Mustache.render(MainContentTemplate, {
             GithubText:language.Github,
             TwitterText:language.Twitter,
+            SteamText: language.Steam,
             leftCanvasContent: LeftCanvas.prototype.getContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
