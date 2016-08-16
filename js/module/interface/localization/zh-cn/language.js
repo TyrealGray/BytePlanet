@@ -15,7 +15,7 @@ define({
     }, 
     MeInfoPage: {
         Title:'我的名字叫TyrealGray',
-        RecentlyMove:'最后一步了，然后就飞德国！'
+        RecentlyMove:'9.13，德国我来了！'
     },
     DiariesPage:{
         Title:'标题',
