@@ -1,9 +1,8 @@
-/* global requirejs,define,window,console,localStorage,document,$ */
 var locale = localStorage.getItem('locale') || navigator.language.toLowerCase();
 
 
 requirejs.config({
-    baseUrl: 'build/js/',
+    baseUrl: 'js/',
 
     paths: {
         i18n: 'thirdLib/requirejs/i18n',
@@ -63,9 +62,9 @@ define(function (require) {
 
     function loadCssFiles() {
         var fileNames = [
-                'build/css/foundation.min.css',
-                'build/css/foundation-icons.css',
-                'build/css/app.css'
+                'css/foundation.min.css',
+                'css/foundation-icons.css',
+                'css/app.css'
             ];
 
         fileNames.forEach(function (fileName) {
