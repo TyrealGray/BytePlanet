@@ -42,7 +42,7 @@ define(function (require) {
 
         var self = this;
 
-        $('.leftCanvasMenuContent').each(function () {
+        $('.navMenuContent').each(function () {
             $(this).children('li').each(function () {
                 $(this).click(function (event) {
                     self.trigger('switchPage', $(this).data('index'));
