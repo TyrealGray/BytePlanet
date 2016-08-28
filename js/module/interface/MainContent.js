@@ -10,12 +10,14 @@ define(function (require) {
 
         BrowserUtil = require('lib/BrowserUtil'),
 
-        LeftCanvas = require('module/interface/LeftCanvas'),
+        // LeftCanvas = require('module/interface/LeftCanvas'),
+
+        NavMenu = require('module/interface/NavMenu'),
 
         HomePage = require('module/interface/HomePage'),
 
         MeInfoPage = require('module/interface/MeInfoPage'),
-        
+
         DiariesPage = require('module/interface/DiariesPage'),
 
         LanguageSettingPage = require('module/interface/LanguageSettingPage'),
@@ -30,7 +32,9 @@ define(function (require) {
 
         this._activePage = null;
 
-        this._leftCanvas = null;
+        // this._leftCanvas = null;
+        
+        this.__navMenu = null;
 
         this._pageSet = [];
 
@@ -45,10 +49,16 @@ define(function (require) {
 
         this._initCentreContent();
 
-        this._initLeftCanvas();
+        this._initNavMenu();
+
+        // this._initLeftCanvas();
 
         this._initEvent();
     };
+
+    MainContent.prototype._initNavMenu = function () {
+        this._navMenu = new NavMenu();
+    }
 
     MainContent.prototype._initLeftCanvas = function () {
         this._leftCanvas = new LeftCanvas();
@@ -68,13 +78,13 @@ define(function (require) {
         var language = GlobalVar.language.MainContent;
 
         $('#content').html(Mustache.render(MainContentTemplate, {
-            GithubText:language.Github,
-            TwitterText:language.Twitter,
+            GithubText: language.Github,
+            TwitterText: language.Twitter,
             SteamText: language.Steam,
-            leftCanvasContent: LeftCanvas.prototype.getContent(),
+            leftCanvasContent: NavMenu.prototype.getLeftCanvasContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),
-                DiariesPage.prototype.getContent(),LanguageSettingPage.prototype.getContent()
+                DiariesPage.prototype.getContent(), LanguageSettingPage.prototype.getContent()
             ]
         }));
     };

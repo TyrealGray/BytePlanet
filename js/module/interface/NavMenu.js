@@ -27,7 +27,12 @@ define(function (require) {
 
     NavMenu.prototype.PAGE_SETTING_INDEX = 3;
 
-    NavMenu.prototype.getContent = function () {
+    NavMenu.prototype.getNavMenuContent = function () {
+        
+    };
+
+    NavMenu.prototype.getLeftCanvasContent = function () {
+
         var language = GlobalVar.language.LeftCanvas;
 
         return Mustache.render(LeftCanvasTemplate, {
@@ -36,7 +41,7 @@ define(function (require) {
             DiariesMenuText: language.Diary,
             SettingMenuText: language.Setting
         });
-    };
+    }
 
     NavMenu.prototype._bindEvent = function () {
 
