@@ -10,6 +10,8 @@ define(function (require) {
 
         GlobalVar = require('module/GlobalVar'),
 
+        NavMenuTemplate = require('text!../../../html/NavMenu.html'),
+
         LeftCanvasTemplate = require('text!../../../html/LeftCanvas.html');
 
     function NavMenu() {
@@ -28,7 +30,14 @@ define(function (require) {
     NavMenu.prototype.PAGE_SETTING_INDEX = 3;
 
     NavMenu.prototype.getNavMenuContent = function () {
-        
+
+        var language = GlobalVar.language.LeftCanvas;
+
+        return Mustache.render(NavMenuTemplate, {
+            HomeMenuText: language.Home,
+            DiariesMenuText: language.Diary,
+            SettingMenuText: language.Setting
+        });
     };
 
     NavMenu.prototype.getLeftCanvasContent = function () {

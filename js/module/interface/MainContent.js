@@ -10,8 +10,6 @@ define(function (require) {
 
         BrowserUtil = require('lib/BrowserUtil'),
 
-        // LeftCanvas = require('module/interface/LeftCanvas'),
-
         NavMenu = require('module/interface/NavMenu'),
 
         HomePage = require('module/interface/HomePage'),
@@ -32,8 +30,6 @@ define(function (require) {
 
         this._activePage = null;
 
-        // this._leftCanvas = null;
-        
         this.__navMenu = null;
 
         this._pageSet = [];
@@ -51,18 +47,12 @@ define(function (require) {
 
         this._initNavMenu();
 
-        // this._initLeftCanvas();
-
         this._initEvent();
     };
 
     MainContent.prototype._initNavMenu = function () {
         this._navMenu = new NavMenu();
     }
-
-    MainContent.prototype._initLeftCanvas = function () {
-        this._leftCanvas = new LeftCanvas();
-    };
 
     MainContent.prototype._initCentreContent = function () {
         this._pageSet.push(new HomePage());
@@ -81,6 +71,7 @@ define(function (require) {
             GithubText: language.Github,
             TwitterText: language.Twitter,
             SteamText: language.Steam,
+            NavMenu: NavMenu.prototype.getNavMenuContent(),
             leftCanvasContent: NavMenu.prototype.getLeftCanvasContent(),
             centreContent: [
                 HomePage.prototype.getContent(), MeInfoPage.prototype.getContent(),

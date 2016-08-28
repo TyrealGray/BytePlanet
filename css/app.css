@@ -18,6 +18,11 @@
     font-size: 3em;
 }
 
+.navMenuA{
+    padding: 0rem 1rem !important;
+    line-height: inherit !important;
+}
+
 .diaryTitle {
     cursor: pointer;
 }

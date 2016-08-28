@@ -16,6 +16,7 @@
 .diaryTitle {
     cursor: pointer;
 }
+
 .diaryContext {
     background-image: url(../source/diray/diraybg.jpg);
     background-size: 100%;
