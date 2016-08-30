@@ -23,6 +23,20 @@
     line-height: inherit !important;
 }
 
+.aboutMySelfContent {
+    left: 30%;
+    text-align: left;
+    color: white;
+    padding-top: 180px;
+}
+
+.homePageHeader {
+    height: 30rem;
+    background:  url(../source/myCat.jpg) bottom center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
 .diaryTitle {
     cursor: pointer;
 }
