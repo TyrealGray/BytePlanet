@@ -31,7 +31,8 @@ define(function (require) {
         var language = GlobalVar.language;
 
         return Mustache.render(HomePageTemplate,{
-            MeInfoTitleText: language.MeInfoPage.Title
+            MeInfoTitleText: language.MeInfoPage.Title,
+            DescribeText: language.MeInfoPage.RecentlyMove
         });
     };
 

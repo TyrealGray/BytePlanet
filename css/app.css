@@ -23,10 +23,15 @@
     line-height: inherit !important;
 }
 
-.aboutMySelfContent {
+.myInfoHeader,
+.myInfoContent {
     left: 30%;
     text-align: left;
     color: white;
+}
+
+.myInfoHeader {
+    font-size: 1.5rem;
     padding-top: 180px;
 }
 
