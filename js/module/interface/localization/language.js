@@ -1,11 +1,9 @@
 /* global define */
 define({
     "root": {
-        MainContent: {
-            Github: 'Github',
-            Twitter:'Twitter',
-            Steam:'Steam'
-        },
+        Github: 'Github',
+        Twitter: 'Twitter',
+        Steam: 'Steam',
         LeftCanvas: {
             Home: 'Home',
             MeInfo: 'About Myself',

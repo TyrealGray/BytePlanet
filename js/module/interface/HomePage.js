@@ -31,6 +31,9 @@ define(function (require) {
         var language = GlobalVar.language;
 
         return Mustache.render(HomePageTemplate,{
+            GithubText: language.Github,
+            TwitterText: language.Twitter,
+            SteamText: language.Steam,
             MeInfoTitleText: language.MeInfoPage.Title,
             DescribeText: language.MeInfoPage.RecentlyMove
         });

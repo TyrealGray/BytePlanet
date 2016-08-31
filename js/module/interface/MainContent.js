@@ -68,9 +68,6 @@ define(function (require) {
         var language = GlobalVar.language.MainContent;
 
         $('#content').html(Mustache.render(MainContentTemplate, {
-            GithubText: language.Github,
-            TwitterText: language.Twitter,
-            SteamText: language.Steam,
             NavMenu: NavMenu.prototype.getNavMenuContent(),
             leftCanvasContent: NavMenu.prototype.getLeftCanvasContent(),
             centreContent: [
