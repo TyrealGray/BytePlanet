@@ -13,10 +13,34 @@
 .icon-size-3 {
     font-size: 3em;
 }
+.icon-white {
+    color: white;
+}
+.navMenuA{
+    padding: 0rem 1rem !important;
+    line-height: inherit !important;
+}
+.myInfoHeader,
+.myInfoContent {
+    left: 30%;
+    text-align: left;
+    color: white;
+}
+.myInfoHeader {
+    font-size: 1.5rem;
+    padding-top: 180px;
+}
+.homePageHeader {
+    height: 30rem;
+    background:  url(../source/home.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100% !important;
+}
 .diaryTitle {
     cursor: pointer;
 }
-
 .diaryContext {
     background-image: url(../source/diray/diraybg.jpg);
     background-size: 100%;

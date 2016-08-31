@@ -20,8 +20,9 @@ js/thirdLib/mustache.min.js
 js/lib/BrowserUtil.js
 js/module/GlobalVar.js
 js/thirdLib/requirejs/text.js
+text!module/../../html/NavMenu.html
 text!module/../../html/LeftCanvas.html
-js/module/interface/LeftCanvas.js
+js/module/interface/NavMenu.js
 js/lib/InheritHelper.js
 js/thirdLib/chart.js
 js/lib/DateTimeUtil.js

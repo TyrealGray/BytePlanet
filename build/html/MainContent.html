@@ -3,37 +3,33 @@
         <button class="menu-icon hide-for-medium" type="button" data-toggle="mainContentOffCanvas"></button>
         <span class="title-bar-title">BytePlanet</span>
     </div>
-    <div class="title-bar-right">
-        <button class="fi-social-twitter icon-size-1-2" type="button">
+
+    <div class="title-bar-right show-for-medium">
+
+        {{{NavMenu}}}
+
+        <!--{{{HereIsTheMainMenu}}}-->
+        <!--<button class="fi-social-twitter icon-size-1-2" type="button">
             <a href="https://twitter.com/tyrealgray" target="_blank" class="title-bar-title" style="padding-left: 0.25em;color:white;">{{TwitterText}}</a>
-        </button>
-        &nbsp;
+        </button> &nbsp;
         <button class="fi-social-github icon-size-1-2" type="button">
             <a href="https://github.com/TyrealGray" target="_blank" class="title-bar-title" style="padding-left: 0.25em;color:white;">{{GithubText}}</a>
-        </button>
-        &nbsp;
+        </button> &nbsp;
         <button class="fi-social-steam icon-size-1-2" type="button">
             <a href="http://steamcommunity.com/id/tyrealgray" target="_blank" class="title-bar-title" style="padding-left: 0.25em;color:white;">{{SteamText}}</a>
-        </button>
+        </button>-->
     </div>
 </div>
 
 <div class="off-canvas-wrapper" style="height: 90%;">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <div class="off-canvas position-left" style="background:white;min-height: 25em;" id="mainContentOffCanvas" data-off-canvas data-position="left">
+        <div class="off-canvas position-left" style="background:white;min-height: 25em;" id="mainContentOffCanvas" data-off-canvas
+            data-position="left">
             {{{leftCanvasContent}}}
         </div>
-        <div class="off-canvas-content" style="padding-top: 1em;padding-bottom: 1em;" data-off-canvas-content>
-            <div class="expanded row">
-
-                <div class="show-for-medium medium-2 large-2 columns">
-                    {{{leftCanvasContent}}}
-                </div>
-
-                <div class="medium-10 large-10 columns">
-                    {{#centreContent}} {{{.}}} {{/centreContent}}
-                </div>
-
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="expanded">
+                {{#centreContent}} {{{.}}} {{/centreContent}}
             </div>
         </div>
     </div>
