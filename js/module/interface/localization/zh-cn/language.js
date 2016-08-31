@@ -12,7 +12,7 @@ define({
         Resume: '继续'
     },
     MeInfoPage: {
-        Title: '我的名字叫TyrealGray',
+        Title: '我的名字叫Tyreal Gray',
         RecentlyMove: '9.13，德国我来了！'
     },
     DiariesPage: {
