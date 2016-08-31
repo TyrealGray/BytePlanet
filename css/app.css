@@ -32,9 +32,11 @@
 
 .homePageHeader {
     height: 30rem;
-    background:  url(../source/myCat.jpg) bottom center;
+    background:  url(../source/home.jpeg);
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
+    max-width: 100% !important;
 }
 
 .diaryTitle {
