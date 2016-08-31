@@ -27,7 +27,7 @@ define(function (require) {
 
     NavMenu.prototype.PAGE_DIARIES_INDEX = 2;
 
-    NavMenu.prototype.PAGE_SETTING_INDEX = 3;
+    NavMenu.prototype.PAGE_LANGUAGE_INDEX = 3;
 
     NavMenu.prototype.getNavMenuContent = function () {
 
@@ -36,7 +36,7 @@ define(function (require) {
         return Mustache.render(NavMenuTemplate, {
             HomeMenuText: language.Home,
             DiariesMenuText: language.Diary,
-            SettingMenuText: language.Setting
+            LanguageSettingText: language.Language
         });
     };
 
@@ -48,7 +48,7 @@ define(function (require) {
             HomeMenuText: language.Home,
             MeInfoMenuText: language.MeInfo,
             DiariesMenuText: language.Diary,
-            SettingMenuText: language.Setting
+            LanguageSettingText: language.Language
         });
     }
 
@@ -94,8 +94,8 @@ define(function (require) {
             case this.PAGE_DIARIES_INDEX:
                 id = 'diariesPage';
                 break;
-            case this.PAGE_SETTING_INDEX:
-                id = 'settingPage';
+            case this.PAGE_LANGUAGE_INDEX:
+                id = 'languagePage';
                 break;
             default:
                 break;

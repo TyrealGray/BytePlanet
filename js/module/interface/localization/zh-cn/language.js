@@ -5,7 +5,7 @@ define({
         Home: '主页',
         MeInfo:'关于我',
         Diary:'日志',
-        Setting: '设置'
+        Language: 'Language'
     },
     HomePage: {
         Send: '发送',

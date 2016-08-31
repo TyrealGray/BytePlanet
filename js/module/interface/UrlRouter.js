@@ -21,8 +21,8 @@ define(function (require, exports) {
             case '#/diaries':
                 $('#diariesPage').show();
                 break;
-            case '#/setting':
-                $('#settingPage').show();
+            case '#/language':
+                $('#languagePage').show();
                 break;
             default:
                 break;

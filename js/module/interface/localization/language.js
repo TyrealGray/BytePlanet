@@ -10,7 +10,7 @@ define({
             Home: 'Home',
             MeInfo: 'About Myself',
             Diary: 'Diary',
-            Setting: 'Setting',
+            Language: 'Language'
         },
         HomePage: {
             Send: 'Send',
