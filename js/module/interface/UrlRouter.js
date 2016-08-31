@@ -2,8 +2,7 @@
 define(function (require, exports) {
     'use strict';
 
-    var MainContent = require('module/interface/MainContent'),
-        LeftCanvas = require('module/interface/LeftCanvas');
+    var MainContent = require('module/interface/MainContent');
 
     function routeHash(hash) {
 

@@ -5,6 +5,8 @@ define(function (require) {
 
         InheritHelper = require('lib/InheritHelper'),
 
+        GlobalVar = require('module/GlobalVar'),
+
         TemperatureManager = require('module/component/TemperatureManager'),
 
         CentreContentPage = require('module/interface/CentreContentPage'),
@@ -26,7 +28,11 @@ define(function (require) {
 
     HomePage.prototype.getContent = function () {
 
-        return Mustache.render(HomePageTemplate);
+        var language = GlobalVar.language;
+
+        return Mustache.render(HomePageTemplate,{
+            MeInfoTitleText: language.MeInfoPage.Title
+        });
     };
 
     HomePage.prototype.update = function () {
