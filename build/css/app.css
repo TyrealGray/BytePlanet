@@ -15,6 +15,7 @@
 }
 .icon-white {
     color: white;
+    text-shadow:1px 1px 10px black;
 }
 .navMenuA{
     padding: 0rem 1rem !important;
@@ -25,13 +26,14 @@
     left: 30%;
     text-align: left;
     color: white;
+    text-shadow: 1px 1px 10px black;
 }
 .myInfoHeader {
     font-size: 1.5rem;
-    padding-top: 180px;
 }
 .homePageHeader {
-    height: 30rem;
+    padding-top: 180px;
+    height: 40rem;
     background:  url(../source/home.jpeg);
     background-repeat:no-repeat;
     background-size: cover;
