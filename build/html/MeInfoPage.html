@@ -1,13 +1,51 @@
 <div class="centreContent" id="meInfoPage" style="display:none;padding-top:1rem;">
 
-    <div class="row">
-        <div class="columns">
+    <div class="row callout">
 
-            <div class="callout large" style="text-align:center;">
-                <h5><strong>{{TitleText}}</strong></h5>
-                <p>{{RecentlyMoveText}}</p>
+        <div class="row">
+            <div class="columns large-5 medium-12">
+
+                <div class="large" style="text-align:center;">
+                    <h5><strong>{{TitleText}}</strong></h5>
+                    <p>{{DescriptionText}}</p>
+                    <img src="../source/SkyHarp.png" style="height:12rem;">
+                </div>
+
             </div>
 
+
+            <div class="columns large-7 medium-12">
+
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
+                    <ul class="orbit-container">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                        <li class="is-active orbit-slide">
+                            <img class="orbit-image" src="../source/Chengdu.jpeg" alt="Space">
+                            <figcaption class="orbit-caption">Where I was born</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="../source/transformer2.jpeg" alt="Space">
+                            <figcaption class="orbit-caption">Autobots roll out!</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="../source/When_I_was_a_newbie.jpeg" alt="Space">
+                            <figcaption class="orbit-caption">When I was a newbie</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="../source/When_I_was_a_newbie_2.jpeg" alt="Space">
+                            <figcaption class="orbit-caption">a thirst for knowledge</figcaption>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">Where I was born</span><span class="show-for-sr">Current Slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Autobots roll out!</span></button>
+                        <button data-slide="2"><span class="show-for-sr">When I was a newbie</span></button>
+                        <button data-slide="3"><span class="show-for-sr">a thirst for knowledge</span></button>
+                    </nav>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
