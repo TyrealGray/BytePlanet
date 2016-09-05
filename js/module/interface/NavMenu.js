@@ -35,6 +35,7 @@ define(function (require) {
 
         return Mustache.render(NavMenuTemplate, {
             HomeMenuText: language.Home,
+            MeInfoMenuText: language.MeInfo,
             DiariesMenuText: language.Diary,
             LanguageSettingText: language.Language
         });
