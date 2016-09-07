@@ -13,7 +13,7 @@ define({
     },
     MeInfoPage: {
         Title: '我的名字叫Tyreal Gray',
-        RecentlyMove: '9.13，德国我来了！',
+        RecentlyMove: '希望每一个故事都有一个好结果',
         Description: '爱游戏，爱编程'
     },
     DiariesPage: {
