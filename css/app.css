@@ -25,6 +25,7 @@
 
 .orbit-container {
     height: auto !important;
+    min-height: 40rem !important;
 }
 
 .navMenuA{
