@@ -1,0 +1,50 @@
+<h2>虛幻4藍圖中Multicast事件C++實現</h2>
+
+
+<div class="diaryContext">
+    <p><b>最近編寫遊戲的時候發現，只是更新Replicated的變量並不能達到完全同步。</b></p>
+    <p><b>例如，動態更換一個client玩家的人物貼圖。我發現無論我用server函數怎麼嵌套本地client函數，它就是無法完成更換。但是同一個函數中其他Replicated的變量缺更換了。後來思考了一下原理，發現確實不能這麼寫，另外也感嘆一下ue4強大的debug模擬機制，這列的server嵌套client函數裏面有些函數無法實現是ue4強行做了其他處理的。</b></p>
+    <hr>
+    <p>首先，我來說一下什麼時候需要
+
+        <b>Multicast</b>。</p>
+    <p><b>
+
+Multicast </b>顧名思義，就是會將這個函數代碼複製到所有<b>client</b>玩家機器上執行。也就是說這個機制是不可靠的。<br></p>
+    <p>然而什麼時候需要呢？很簡單，就像我之前說的，加入我要自己的人物做一個笑臉的表情，這裡肯定會涉及改變我人物模型上的材質貼圖，如果這個貼圖是
+
+        <b>Replicated</b>的變量，那沒有問題，大家都是同步的。但是貼圖這種東西，一個還好，多了之後服務器都要一一同步，負載就太大了。那麼這個時候，顯然貼圖就不能作為
+
+        <b>Replicated</b>的變量。這個時候就需要
+
+        <b>Multicast</b>了。</p>
+    <hr>
+    <p><b>
+
+Multicast </b>把切換貼圖的這個函數執行的消息進行通知，所有的<b>client</b>玩家收到這個消息之後，都會在本地執行一次切換貼圖的事件。這樣，我控制的人物模型<b>player1</b>切換貼圖之後，其他玩家收到消息，也將<b>player1</b>切換貼圖，這樣，大家看起來就又都是一樣的了。<br></p>
+    <hr>
+    <p>如何用<b>C++</b>實現
+
+        <b>Multicast</b>？很簡單，在你要
+
+        <b>Multicast
+</b> 執行的函數上面附上如下申明：
+    </p>
+    <figure class="tmblr-full"><img src="http://67.media.tumblr.com/2dd25719d6dfabdeeb4bcd97a84e688c/tumblr_inline_nw7qkupNLT1tuwv4e_400.png" alt="image"></figure>
+    <p>然後對應的函數實現要把名字後面加<b>_Implementtation</b>：<br></p>
+    <figure class="tmblr-full"><img src="http://66.media.tumblr.com/f48bdca1338f946963a1cb9c31de70e6/tumblr_inline_nw7qmmwkLM1tuwv4e_500.png" alt="image"></figure>
+    <p>然後當你調用<b>BeExpos</b>e()函數時，就會觸發
+
+        <b>Multicast</b>了。</p>
+    <p>不過需要注意的是：
+
+        <b>Multicast</b>的函數只能在<b>server</b>函數中觸發，也就是說，<b>client</b>上是觸發不了
+
+        <b>Multicast</b>函數的，即使你寫上了也沒用。</p>
+    <hr>
+    <p>
+
+        <b>另外有需要討論的技術問題可以加入QQ群302281607來一起討論，期待你的加入。</b>
+
+        <br></p>
+</div>

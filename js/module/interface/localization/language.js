@@ -18,7 +18,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is Tyreal Gray',
-            RecentlyMove: 'Wish every story has a happy ending',
+            RecentlyMove: 'had arrived in Hamburg, happy and rush!',
             Description: 'love games, love programming'
         },
         DiariesPage: {
