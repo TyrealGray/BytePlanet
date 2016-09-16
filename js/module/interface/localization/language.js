@@ -18,7 +18,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is Tyreal Gray',
-            RecentlyMove: 'had arrived in Hamburg, happy and rush!',
+            RecentlyMove: 'someone hacked me and try to get money from my friend!',
             Description: 'love games, love programming'
         },
         DiariesPage: {
