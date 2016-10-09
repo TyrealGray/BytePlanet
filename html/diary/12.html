@@ -3,13 +3,13 @@
 <div class="diaryContext">
     <p><b>Recently when I was coding, found out that Replicated variable cannot make my charactor's material change in both server and client.</b></p>
     <hr>
-    <p>so I research, found out I need
+    <p>so I research, found out that I need
 
         <b>Multicast</b>!</p>
     <p><b>
 
-Multicast </b>顧名思義，就是會將這個函數代碼複製到所有<b>client</b>玩家機器上執行。也就是說這個機制是不可靠的。<br></p>
-    <p>然而什麼時候需要呢？很簡單，就像我之前說的，加入我要自己的人物做一個笑臉的表情，這裡肯定會涉及改變我人物模型上的材質貼圖，如果這個貼圖是
+Multicast </b>is like if you run this function on server, it will force itself also run on <b>client</b> again. But it also make this function unsafe because it run on client.<br></p>
+    <p>When do we need this? 很簡單，就像我之前說的，加入我要自己的人物做一個笑臉的表情，這裡肯定會涉及改變我人物模型上的材質貼圖，如果這個貼圖是
 
         <b>Replicated</b>的變量，那沒有問題，大家都是同步的。但是貼圖這種東西，一個還好，多了之後服務器都要一一同步，負載就太大了。那麼這個時候，顯然貼圖就不能作為
 
