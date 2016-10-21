@@ -18,7 +18,7 @@ define({
         },
         MeInfoPage: {
             Title: 'My name is Tyreal Gray',
-            RecentlyMove: 'Really wish to begin my creation about \'LegendOfMountainSea\'',
+            RecentlyMove: 'Finally! got table for programming!',
             Description: 'love games, love programming'
         },
         DiariesPage: {
