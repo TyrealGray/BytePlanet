@@ -1,0 +1,10 @@
+{
+  "name": "byteplanet",
+  "version": "2.0.0",
+  "description": "An interior monologue from a programmer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TyrealGray/BytePlanet.git"
+  },
+  "author": "TyrealGray"
+}
