@@ -1,13 +1,16 @@
+var path = require("path");
 module.exports = {
-    entry: "./bytePlanet.js",
+    entry: {
+        home: "./bytePlanet.js",
+        diaries: "./diaries.js"
+    },
     output: {
-        path: __dirname,
-        filename: "bundle.js"
+        path: path.join(__dirname, "dist"),
+        filename: "[name].bundle.js"
     },
     devtool: 'source-map',
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
