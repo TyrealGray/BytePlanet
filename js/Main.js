@@ -1,6 +1,5 @@
 var locale = localStorage.getItem('locale') || navigator.language.toLowerCase();
 
-
 requirejs.config({
     baseUrl: 'js/',
 
