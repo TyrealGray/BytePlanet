@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/TyrealGray/BytePlanet.git"
   },
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors"
+  },
   "author": "TyrealGray",
   "devDependencies": {
     "babel-core": "^6.18.2",
