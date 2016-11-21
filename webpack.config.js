@@ -1,7 +1,7 @@
 var path = require("path");
 module.exports = {
     entry: {
-        home: "./bytePlanet.js",
+        home: "./home.js",
         diaries: "./diaries.js"
     },
     devtool: 'source-map',
