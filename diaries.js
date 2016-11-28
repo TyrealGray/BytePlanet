@@ -2,7 +2,7 @@ import { initBytePlanetPage } from './assets/js/main';
 
 initBytePlanetPage();
 
-var tableBodyEl = document.getElementById("tableBody");
+var tableBodyEl = document.getElementById("diariesTableBody");
 
 var requestStories = new Request('assets/data/diaries.json'),
     storiesEl = [];
