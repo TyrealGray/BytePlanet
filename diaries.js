@@ -20,9 +20,8 @@ fetch(requestStories).then((response) => {
 		tableBodyEl.innerHTML = storiesEl.join('');
 
 		Array.prototype.slice.call(tableBodyEl.getElementsByTagName('tr')).forEach(function (element) {
-			console.log(element)
-			document.addEventListener('onclick', () => {
-				location.href = this.getAttribute('url');
+			element.addEventListener('click', () => {
+				location.href = element.getAttribute('url');
 			}, false)
 		}, this);
 
