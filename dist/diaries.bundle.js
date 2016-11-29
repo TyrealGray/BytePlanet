@@ -49,6 +49,49 @@
 	var _main = __webpack_require__(1);
 	
 	(0, _main.initBytePlanetPage)();
+	
+	var tableBodyEl = document.getElementById("diariesTableBody");
+	
+	var requestStories = new Request('assets/data/diaries.json'),
+	    storiesEl = [];
+	
+	fetch(requestStories).then(function (response) {
+		response.json().then(function (stories) {
+			console.log(stories);
+			var _iteratorNormalCompletion = true;
+			var _didIteratorError = false;
+			var _iteratorError = undefined;
+	
+			try {
+				for (var _iterator = stories.en[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+					var story = _step.value;
+	
+					storiesEl.push('<tr url="diary/' + story.url + '.html" >\n                                <td>' + story.title + '</td>\n                                <td>' + story.date + '</td>\n                            </tr>');
+				}
+			} catch (err) {
+				_didIteratorError = true;
+				_iteratorError = err;
+			} finally {
+				try {
+					if (!_iteratorNormalCompletion && _iterator.return) {
+						_iterator.return();
+					}
+				} finally {
+					if (_didIteratorError) {
+						throw _iteratorError;
+					}
+				}
+			}
+	
+			tableBodyEl.innerHTML = storiesEl.join('');
+	
+			Array.prototype.slice.call(tableBodyEl.getElementsByTagName('tr')).forEach(function (element) {
+				element.addEventListener('click', function () {
+					location.href = element.getAttribute('url');
+				}, false);
+			}, this);
+		});
+	});
 
 /***/ },
 /* 1 */
