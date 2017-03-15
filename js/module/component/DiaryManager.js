@@ -21,6 +21,10 @@ define(function (require, exports) {
         {
             index: 9, title: 'ue4 Nav system', keyword: 'ue4 nav',
             date: '2016.07.18'
+        },
+        {
+            index: 13, title: '100 Stupid Questions for React Native', keyword: 'react native',
+            date: '2017.03.15'
         }
     ],
         chineseDiaries = [
