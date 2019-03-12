@@ -3,17 +3,17 @@
   "name": "BYTEPLANET",
   "icons": [
     {
-      "src": "/icon_192.png",
+      "src": "/dist/icon_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icon_512.png",
+      "src": "/dist/icon_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "./?source=pwa",
+  "start_url": "./index.html?source=pwa",
   "description": "An interior monologue from a programmer",
   "background_color": "#000000",
   "display": "standalone",
