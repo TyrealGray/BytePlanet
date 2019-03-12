@@ -1,0 +1,22 @@
+{
+  "short_name": "BYTEPLANET",
+  "name": "BYTEPLANET",
+  "icons": [
+    {
+      "src": "/assets/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "description": "An interior monologue from a programmer",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": ".",
+  "theme_color": "#000000"
+}
