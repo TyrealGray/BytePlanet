@@ -37,7 +37,7 @@ const CACHE_VERSION = 1;
 let CURRENT_CACHES = {
 	offline: 'byteplanet-v' + CACHE_VERSION
 };
-const OFFLINE_URL = '/';
+const OFFLINE_URL = '/index.html';
 
 function createCacheBustedRequest(url) {
 	let request = new Request(url, {cache: 'reload'});
