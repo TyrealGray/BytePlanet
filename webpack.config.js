@@ -2,7 +2,6 @@ var path = require("path");
 module.exports = {
     entry: {
         home: "./home.js",
-        diaries: "./diaries.js"
     },
     devtool: 'source-map',
     output: {
